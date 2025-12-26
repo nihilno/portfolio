@@ -9,8 +9,35 @@ export const navLinks = [
 
 export const socials = [
   {
-    icon: <Github className="group-hover:text-primary transition- size-5" />,
+    icon: (
+      <Github className="group-hover:text-primary size-5 transition-colors" />
+    ),
     href: "#",
     label: "github",
   },
+];
+
+export const skills = [
+  "React",
+  "NextJS",
+  "Typescript",
+  "Node.js",
+  "Docker",
+  "Vercel",
+  "TailwindCSS",
+  "Shadcn",
+  "GitHub Actions",
+  "Prisma",
+  "PostgreSQL",
+  "GSAP",
+  "React Query",
+  "Supabase",
+  "Clerk",
+  "FFMPEG",
+  "Stripe",
+  "Zustand",
+  "React Hook Form",
+  "ZOD",
+  "APIs",
+  "Auth",
 ];
