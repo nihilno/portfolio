@@ -1,5 +1,18 @@
+import AboutLeft from "./about/about-left";
+import AboutRight from "./about/about-right";
+
 function About() {
-  return <div>About</div>;
+  return (
+    <section
+      id="about"
+      className="relative z-10 container mx-auto overflow-hidden py-32"
+    >
+      <div className="grid grid-cols-1 items-center gap-16 px-6 lg:grid-cols-2">
+        <AboutLeft />
+        <AboutRight />
+      </div>
+    </section>
+  );
 }
 
 export default About;

@@ -9,7 +9,9 @@ function HeroContent() {
       <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
         <HeroArticle />
         <HeroImage />
-        <HeroSkills />
+        <div className="lg:col-span-2">
+          <HeroSkills />
+        </div>
         <ScrollArrow href="#about" />
       </div>
     </div>

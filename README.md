@@ -5,3 +5,5 @@ add link to github
 
 add more technologies
 when navbar is scrolled down add bg with gsap --> add glass-strong p-3, based: py-5 ?
+
+animate highlights with stagger

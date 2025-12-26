@@ -1,7 +1,6 @@
 import Button from "@/components/global/button";
 import CvButton from "@/components/global/cv-button";
 import { socials } from "@/lib/constants";
-import { cn } from "@/lib/utils";
 import { ChevronRight, Download } from "lucide-react";
 import Link from "next/link";
 
@@ -16,12 +15,15 @@ function HeroArticle() {
       </div>
       <div className="space-y-4">
         <h1 className="text-5xl leading-tight font-bold md:text-6xl lg:text-7xl">
-          Crafting <span className="text-primary glow-text">digital</span>
+          Crafting digital
           <br />
-          experiences with <br />
-          <span className={cn("font-serif font-normal italic")}>
-            precision.
+          experiences
+          <span className="text-primary glow-text">
+            {" "}
+            with <br />
+            precision
           </span>
+          .
         </h1>
         <p className="text-muted-foreground max-w-lg text-lg">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus,
@@ -31,7 +33,7 @@ function HeroArticle() {
       </div>
       <div className="flex flex-wrap gap-4">
         <Button size="lg" className="group">
-          Contact Me{" "}
+          Contact Me
           <ChevronRight className="size-5 transition-all duration-200 ease-in-out group-hover:translate-x-2" />
         </Button>
         <CvButton>

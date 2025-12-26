@@ -1,4 +1,4 @@
-import { Github } from "lucide-react";
+import { Code2, Gem, Github, Lightbulb, Rocket } from "lucide-react";
 
 export const navLinks = [
   { href: "#about", label: "about" },
@@ -40,4 +40,34 @@ export const skills = [
   "ZOD",
   "APIs",
   "Auth",
+];
+
+const highlightIconStyle =
+  "size-12 rounded-xl bg-primary/10 grid place-items-center mb-4 group-hover:bg-primary/20 transition-colors p-2.75 text-primary duration-400 lg:size-16";
+
+export const highlights = [
+  {
+    icon: <Code2 className={highlightIconStyle} />,
+    title: "Clean Code",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, modi.",
+  },
+  {
+    icon: <Rocket className={highlightIconStyle} />,
+    title: "Performance",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, modi.",
+  },
+  {
+    icon: <Gem className={highlightIconStyle} />,
+    title: "Premium look",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, modi.",
+  },
+  {
+    icon: <Lightbulb className={highlightIconStyle} />,
+    title: "Innovation",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, modi.",
+  },
 ];
