@@ -1,4 +1,4 @@
-function CvButton({ children }: { children: React.ReactNode }) {
+function AccentButton({ children }: { children: React.ReactNode }) {
   return (
     <button className="border-border text-foreground hover:border-primary/50 focus-visible:ring-primary group animated-border relative cursor-pointer overflow-visible rounded-full border bg-transparent px-8 py-4 text-lg font-medium transition-all duration-1000 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
       <svg
@@ -26,4 +26,4 @@ function CvButton({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default CvButton;
+export default AccentButton;

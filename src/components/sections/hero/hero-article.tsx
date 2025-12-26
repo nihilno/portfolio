@@ -1,12 +1,12 @@
+import AccentButton from "@/components/global/accent-button";
 import Button from "@/components/global/button";
-import CvButton from "@/components/global/cv-button";
 import { socials } from "@/lib/constants";
 import { ChevronRight, Download } from "lucide-react";
 import Link from "next/link";
 
 function HeroArticle() {
   return (
-    <div className="space-y-8">
+    <article className="space-y-8">
       <div>
         <span className="glass text-primary inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm">
           <span className="bg-primary size-2 animate-pulse rounded-full" />
@@ -36,10 +36,10 @@ function HeroArticle() {
           Contact Me
           <ChevronRight className="size-5 transition-all duration-200 ease-in-out group-hover:translate-x-2" />
         </Button>
-        <CvButton>
-          <Download className="size-5.5 transition-all duration-200 ease-in-out group-hover:translate-y-1" />
+        <AccentButton>
+          <Download className="size-5.5 transition-all duration-400 ease-in-out group-hover:translate-y-1" />
           <span>Download CV</span>
-        </CvButton>
+        </AccentButton>
       </div>
       <div className="flex items-center gap-4">
         <span className="text-muted-foreground text-sm">Follow Me: </span>
@@ -54,7 +54,7 @@ function HeroArticle() {
           </Link>
         ))}
       </div>
-    </div>
+    </article>
   );
 }
 

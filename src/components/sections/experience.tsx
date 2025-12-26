@@ -1,5 +1,11 @@
+import { sectionClasses } from "@/lib/constants";
+
 function Experience() {
-  return <div>Experience</div>;
+  return (
+    <section id="experience" className={sectionClasses}>
+      experience
+    </section>
+  );
 }
 
 export default Experience;

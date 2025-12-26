@@ -1,5 +1,11 @@
+import { sectionClasses } from "@/lib/constants";
+
 function Testimonials() {
-  return <div>Testimonials</div>;
+  return (
+    <section id="testimonials" className={sectionClasses}>
+      testimonials
+    </section>
+  );
 }
 
 export default Testimonials;

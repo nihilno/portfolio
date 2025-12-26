@@ -2,7 +2,7 @@ import { highlights } from "@/lib/constants";
 
 function AboutRight() {
   return (
-    <div className="grid h-full gap-6 sm:grid-cols-2">
+    <div className="grid h-full gap-6 xl:grid-cols-2">
       {highlights.map(({ icon, title, description }) => (
         <div
           key={title}

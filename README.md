@@ -7,3 +7,10 @@ add more technologies
 when navbar is scrolled down add bg with gsap --> add glass-strong p-3, based: py-5 ?
 
 animate highlights with stagger
+
+gsap everything below hero.
+center hero article on small?
+hero title sizeing on lg
+hero buttons on sm
+
+overall hero on sm!

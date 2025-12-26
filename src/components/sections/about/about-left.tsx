@@ -1,6 +1,6 @@
 function AboutLeft() {
   return (
-    <div className="space-y-8">
+    <article className="space-y-8">
       <>
         <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase">
           About Me
@@ -44,7 +44,7 @@ function AboutLeft() {
           </p>
         </div>
       </>
-    </div>
+    </article>
   );
 }
 
