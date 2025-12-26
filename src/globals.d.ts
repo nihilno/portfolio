@@ -5,6 +5,13 @@ declare global {
     disabled?: boolean;
     size?: "sm" | "md" | "lg";
   };
+
+  type ParticlesState = {
+    left: string;
+    top: string;
+    animation: string;
+    animationDelay: string;
+  };
 }
 
 export {};

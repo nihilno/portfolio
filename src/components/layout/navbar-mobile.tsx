@@ -1,5 +1,6 @@
 "use client";
 
+import Button from "@/components/global/button";
 import {
   Sheet,
   SheetContent,
@@ -11,7 +12,6 @@ import {
 import { navLinks } from "@/lib/constants";
 import { Menu } from "lucide-react";
 import Link from "next/link";
-import Button from "../global/button";
 
 function NavbarMobile() {
   return (
