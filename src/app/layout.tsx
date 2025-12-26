@@ -1,3 +1,5 @@
+import Footer from "@/components/layout/footer";
+import Navbar from "@/components/layout/navbar";
 import { inter } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -20,10 +22,12 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          "bg-background text-foreground min-h-dvh antialiased",
+          "bg-background text-foreground flex min-h-dvh flex-col antialiased",
         )}
       >
-        <main>{children}</main>
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );
