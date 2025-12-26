@@ -1,13 +1,15 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
 :root {
   --background: #0f1418;
   --foreground: #f0f2f5;
   --card: #141a1f;
-
   --primary: #20b2a6;
-  --primary-foreground: #fff --secondary: #1f2830;
-  --secondary-foreground: #20b2a6 --muted: #252e37;
+  --primary-foreground: #fff;
+  --secondary: #1f2830;
+  --secondary-foreground: #20b2a6;
+  --muted: #252e37;
   --muted-foreground: #7a8491;
   --border: #242b32;
   --highlight: #f5a623;
@@ -50,5 +52,11 @@
     background-color: color-mix(in srgb, var(--color-surface) 50%, transparent);
     backdrop-filter: blur(16px);
     border: 1px solid color-mix(in srgb, var(--color-border) 50%, transparent);
+  }
+
+  .glass-strong {
+    background-color: color-mix(in srgb, var(--color-surface) 80%, transparent);
+    backdrop-filter: blur(24px);
+    border: 1px solid color-mix(in srgb, var(--color-border) 60%, transparent);
   }
 }

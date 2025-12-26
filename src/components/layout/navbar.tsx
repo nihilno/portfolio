@@ -1,6 +1,7 @@
 import Button from "@/components/global/button";
 import { navLinks } from "@/lib/constants";
 import Link from "next/link";
+import NavbarMobile from "./navbar-mobile";
 
 function Navbar() {
   return (
@@ -13,7 +14,7 @@ function Navbar() {
           MP<span className="text-primary">.</span>
         </Link>
 
-        <ul className="glass flex items-center gap-1 rounded-full px-2 py-1">
+        <ul className="glass hidden items-center gap-1 rounded-full px-2 py-1 md:flex">
           {navLinks.map(({ href, label }) => (
             <Link
               href={href}
@@ -25,9 +26,12 @@ function Navbar() {
           ))}
         </ul>
 
-        <div>
+        <div className="hidden md:block">
           <Button>Contact Me</Button>
         </div>
+
+        <div className="flex md:hidden"></div>
+        <NavbarMobile />
       </nav>
     </header>
   );
