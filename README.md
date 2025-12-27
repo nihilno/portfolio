@@ -14,3 +14,5 @@ hero title sizeing on lg
 hero buttons on sm
 
 overall hero on sm!
+
+experiecnes center text on lg

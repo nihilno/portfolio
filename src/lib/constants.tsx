@@ -113,3 +113,42 @@ export const projects = [
     github: "#",
   },
 ];
+
+export const experiences = [
+  {
+    period: "2020 — 2022",
+    role: "Developer",
+    company: "Turbo",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima quis accusantium velit impedit quo esse!",
+    technologies: ["x", "y", "z"],
+    current: true,
+  },
+  {
+    period: "2020 — 2022",
+    role: "Developer",
+    company: "Turbo",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima quis accusantium velit impedit quo esse!",
+    technologies: ["x", "y", "z"],
+    current: false,
+  },
+  {
+    period: "2020 — 2022",
+    role: "Developer",
+    company: "Turbo",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima quis accusantium velit impedit quo esse!",
+    technologies: ["x", "y", "z"],
+    current: false,
+  },
+  {
+    period: "2020 — 2022",
+    role: "Developer",
+    company: "Turbo",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima quis accusantium velit impedit quo esse!",
+    technologies: ["x", "y", "z"],
+    current: false,
+  },
+];

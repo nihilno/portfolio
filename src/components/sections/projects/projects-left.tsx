@@ -1,6 +1,6 @@
 function ProjectsLeft() {
   return (
-    <div className="mx-auto mb-16 max-w-3xl text-center">
+    <article className="mx-auto mb-16 max-w-3xl text-center">
       <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase">
         Featured work
       </span>
@@ -14,7 +14,7 @@ function ProjectsLeft() {
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta optio,
         animi soluta reiciendis porro ratione.
       </p>
-    </div>
+    </article>
   );
 }
 

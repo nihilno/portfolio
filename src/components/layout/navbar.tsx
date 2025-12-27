@@ -9,7 +9,7 @@ function Navbar() {
       <nav className="container mx-auto flex items-center justify-between px-6">
         <Link
           href={"#"}
-          className="hover:text-primary text-xl font-bold tracking-tight transition-colors"
+          className="hover:text-primary text-xl font-bold tracking-tight transition-all duration-300 ease-in-out hover:-translate-y-0.5"
         >
           MP<span className="text-primary hover:glow-text">.</span>
         </Link>
@@ -32,7 +32,7 @@ function Navbar() {
         </div>
 
         <div className="flex md:hidden"></div>
-        <Menu className="hover:text-primary hover:glow-text block size-6 cursor-pointer transition-colors md:hidden" />
+        <Menu className="hover:text-primary hover:glow-text block size-6 cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-0.5 md:hidden" />
         {/* <NavbarMobile /> */}
       </nav>
     </header>

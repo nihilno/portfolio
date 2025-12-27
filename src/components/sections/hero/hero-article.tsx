@@ -37,7 +37,7 @@ function HeroArticle() {
           <ChevronRight className="size-5 transition-all duration-200 ease-in-out group-hover:translate-x-2" />
         </Button>
         <AccentButton>
-          <Download className="size-5.5 transition-all duration-400 ease-in-out group-hover:translate-y-1" />
+          <Download className="size-5 transition-all duration-200 ease-in-out group-hover:translate-y-1" />{" "}
           <span>Download CV</span>
         </AccentButton>
       </div>

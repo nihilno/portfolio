@@ -19,12 +19,14 @@ function ProjectsRight() {
             <div className="from-card via-card/50 absolute inset-0 bg-linear-to-t to-transparent opacity-60" />
 
             <div className="absolute inset-0 flex items-center justify-center gap-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <Link
+              <a
                 href={link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="glass hover:bg-primary hover:text-primary-foreground rounded-full p-3 transition-colors duration-300"
               >
                 <ArrowUpRight className="size-8" />
-              </Link>
+              </a>
               <Link
                 href={github}
                 className="glass hover:bg-primary hover:text-primary-foreground rounded-full p-3 transition-colors duration-300"
