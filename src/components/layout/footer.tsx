@@ -15,7 +15,6 @@ function Footer() {
               © {currentYear} Maciej Polowy. All rights reserved.
             </p>
           </div>
-
           <nav className="flex flex-wrap justify-center gap-6">
             {navLinks.map(({ href, label }) => (
               <Link
@@ -27,13 +26,14 @@ function Footer() {
               </Link>
             ))}
           </nav>
-
           <div className="flex items-center gap-4">
             {socials.map(({ icon, href, label }) => (
               <a
                 key={label}
                 href={href}
                 aria-label={label}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="glass hover:bg-primary/10 hover:text-primary rounded-full p-2 transition-all"
               >
                 {icon}

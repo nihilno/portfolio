@@ -7,7 +7,7 @@ function Button({
   size = "sm",
 }: ButtonProps) {
   const baseClasses =
-    "focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-primary/25  shrink-0 cursor-pointer overflow-hidden rounded-full font-medium shadow-lg transition-colors focus:outline-none focus-visible:ring-2";
+    "focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-primary/25  shrink-0 overflow-hidden rounded-full font-medium shadow-lg transition-colors focus:outline-none focus-visible:ring-2 w-full shrink-0";
 
   const sizeClasses = {
     sm: "px-4 py-2 text-sm",

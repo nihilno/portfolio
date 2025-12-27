@@ -52,6 +52,10 @@
     user-select: none;
     cursor: default;
   }
+
+  button {
+    cursor: pointer;
+  }
 }
 
 @layer components {

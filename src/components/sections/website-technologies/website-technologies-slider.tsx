@@ -21,7 +21,7 @@ function WebsiteTechnologiesSlider() {
           {technologies[active].name}
         </h3>
 
-        <div className="glow-border border-primary/15 group hover:border-primary/50 relative mx-auto aspect-square h-40 rounded-2xl border-4 transition-colors duration-300">
+        <div className="glow-border border-primary/15 group hover:border-primary/50 relative mx-auto aspect-square h-40 rounded-2xl border-4 transition-colors duration-300 lg:h-50">
           <Image
             src={technologies[active].image}
             fill
@@ -30,12 +30,12 @@ function WebsiteTechnologiesSlider() {
           />
         </div>
 
-        <p className="text-muted-foreground text-lg">
+        <p className="text-muted-foreground text-base md:text-lg">
           {technologies[active].role}
         </p>
       </div>
 
-      <div className="mt-8 flex items-center justify-center gap-2">
+      <div className="mt-12 flex items-center justify-center gap-2">
         <button
           aria-label="Previous technology"
           onClick={() => handleChangeActive(-1)}
@@ -43,12 +43,12 @@ function WebsiteTechnologiesSlider() {
             if (e.key === "ArrowLeft") handleChangeActive(-1);
             if (e.key === "ArrowRight") handleChangeActive(1);
           }}
-          className="glass hover:bg-primary/10 hover:text-primary relative z-10 grid cursor-pointer place-items-center rounded-full p-3 transition-colors duration-300"
+          className="glass hover:bg-primary/10 hover:text-primary relative z-10 grid place-items-center rounded-full p-3 transition-colors duration-300"
         >
-          <ChevronLeft className="size-6 cursor-pointer" />
+          <ChevronLeft className="size-4 cursor-pointer md:size-6" />
         </button>
 
-        <div className="flex min-w-36 shrink-0 items-center justify-center gap-2">
+        <div className="flex min-w-36 shrink-0 items-center justify-center gap-2 md:min-w-42">
           {technologies.map((_, index) => (
             <button
               key={index}
@@ -57,7 +57,7 @@ function WebsiteTechnologiesSlider() {
               className={cn(
                 "size-3 rounded-full transition-all duration-300 ease-in-out",
                 index === active
-                  ? "bg-primary w-12"
+                  ? "bg-primary w-7 md:w-12"
                   : "bg-muted-foreground/30 hover:bg-muted-foreground/70 transition-colors duration-200",
               )}
             />
@@ -71,9 +71,9 @@ function WebsiteTechnologiesSlider() {
             if (e.key === "ArrowLeft") handleChangeActive(-1);
             if (e.key === "ArrowRight") handleChangeActive(1);
           }}
-          className="glass hover:bg-primary/10 hover:text-primary relative z-10 grid cursor-pointer place-items-center rounded-full p-3 transition-colors duration-300"
+          className="glass hover:bg-primary/10 hover:text-primary relative z-10 grid place-items-center rounded-full p-3 transition-colors duration-300"
         >
-          <ChevronRight className="size-6 cursor-pointer" />
+          <ChevronRight className="size-4 cursor-pointer md:size-6" />
         </button>
       </div>
     </div>

@@ -13,10 +13,10 @@ function Contact() {
             Get in Touch
           </span>
           <h2 className="mt-4 mb-6 text-4xl md:text-5xl">
-            <span className="text-secondary-foreground font-bold">
+            <span className="text-secondary-foreground glow-text font-bold">
               Let&apos;s build{" "}
             </span>
-            something great .
+            something great.
           </h2>
           <p className="text-muted-foreground">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea error,

@@ -5,7 +5,7 @@ function AboutLeft() {
         <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase">
           About Me
         </span>
-        <h2 className="text-secondary-foreground mt-8 text-4xl leading-tight font-bold md:text-5xl">
+        <h2 className="text-secondary-foreground glow-text mt-8 text-4xl leading-tight font-bold md:text-5xl">
           Building the future
           <span className="text-foreground font-normal">
             , one component at a time.
@@ -36,7 +36,7 @@ function AboutLeft() {
         </div>
 
         <div className="glass glow-border mt-12 rounded-2xl p-6">
-          <p className="text-foreground text-lg font-medium italic">
+          <p className="text-foreground text-lg font-light italic">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa dolor
             ea enim. Doloribus dolores fugiat et asperiores neque, voluptate
             enim dignissimos, nam adipisci eligendi, laboriosam repellendus

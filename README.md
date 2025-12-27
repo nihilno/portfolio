@@ -23,8 +23,6 @@ app flow left, center, left, center
 
 check all images and optimize if needed
 
-on xl contact info change layout
+add vid mp4 fallback
 
-available -- make text responsive
-
-make overall text responsive
+check and edit CONSTS AND HEADER AND PS SO ITS NOT CORNY

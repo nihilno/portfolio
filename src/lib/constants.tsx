@@ -54,7 +54,7 @@ export const skills = [
 ];
 
 const highlightIconStyle =
-  "size-12 rounded-xl bg-primary/10 grid place-items-center mb-4 group-hover:bg-primary/20 transition-colors p-2.5 text-primary duration-400 lg:size-16";
+  "size-12 rounded-xl bg-primary/10 grid place-items-center mb-4 group-hover:bg-primary/20 transition-colors p-2.5 text-primary duration-400 lg:size-14 ";
 
 export const highlights = [
   {
@@ -120,6 +120,24 @@ export const projects = [
     link: "#",
     github: "#",
   },
+  {
+    title: "Test",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, modi.",
+    image: "/projects/project4.png",
+    tags: ["x", "Y", "z", "c"],
+    link: "#",
+    github: "#",
+  },
+  {
+    title: "Test",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, modi.",
+    image: "/projects/project4.png",
+    tags: ["x", "Y", "z", "c"],
+    link: "#",
+    github: "#",
+  },
 ];
 
 export const experiences = [
@@ -162,20 +180,52 @@ export const experiences = [
 ];
 
 export const technologies = [
-  { name: "Next.js 16", image: "/icons/nextjs.svg", role: "Main Framework" },
-  { name: "React 19", image: "/icons/react.svg", role: "UI Library" },
+  {
+    name: "Next.js 16",
+    image: "/icons/nextjs.svg",
+    role: "Main Framework",
+    description:
+      "Smart engine that makes the website load lightning-fast and perform well in search engines.",
+  },
+  {
+    name: "React 19",
+    image: "/icons/react.svg",
+    role: "UI Library",
+    description:
+      "The building blocks I use to create all the interactive parts — buttons, menus, sliders, and everything that responds when you click or scroll.",
+  },
   {
     name: "Tailwind CSS 4",
     image: "/icons/tailwind.svg",
     role: "Styling System",
+    description:
+      "Ensures clean, responsive design that looks great on phones, tablets, and desktops.",
   },
-  { name: "TypeScript", image: "/icons/ts.svg", role: "Type Safety" },
-  { name: "GSAP", image: "/icons/gsap.svg", role: "Animations" },
-  { name: "FFmpeg", image: "/icons/ffmpeg.svg", role: "Media Processing" },
+  {
+    name: "TypeScript",
+    image: "/icons/ts.svg",
+    role: "Type Safety",
+    description:
+      "Catches errors early during development, helping keep the site stable and reliable.",
+  },
+  {
+    name: "GSAP",
+    image: "/icons/gsap.svg",
+    role: "Animations",
+    description:
+      "Powers the smooth slides, fades, and movements that make the site feel dynamic and engaging.",
+  },
+  {
+    name: "FFmpeg",
+    image: "/icons/ffmpeg.svg",
+    role: "Media Processing",
+    description:
+      "Handles video and audio processing so media loads quickly and plays smoothly across browsers.",
+  },
 ];
 
 const contactInfoIconStyle =
-  "text-primary size-6 group-hover:size-8 transition-all duration-200 ease-in-out";
+  "text-primary size-5 group-hover:size-7 transition-all duration-300 ease-in-out shrink-0 md:size-6 md:group-hover:size-8";
 
 export const contactInfo = [
   {
@@ -188,7 +238,7 @@ export const contactInfo = [
     label: "Phone",
     icon: <Phone className={contactInfoIconStyle} />,
     value: "+48 724 562 555",
-    href: "tel: +48724562555",
+    href: "tel:+48724562555",
   },
   {
     label: "Location",

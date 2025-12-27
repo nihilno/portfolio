@@ -15,7 +15,7 @@ function Experience() {
           </span>
           <h2 className="mt-4 mb-6 text-4xl md:text-5xl">
             Experience that{" "}
-            <span className="text-secondary-foreground font-bold">
+            <span className="text-secondary-foreground glow-text font-bold">
               speaks volumes
             </span>
             .

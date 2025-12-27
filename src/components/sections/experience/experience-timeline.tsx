@@ -29,7 +29,7 @@ function ExperienceTimeline() {
 
               <div
                 className={cn(
-                  "pl-8 lg:pl-0",
+                  "pl-4 sm:pl-8 lg:pl-0",
                   index % 2 === 0
                     ? "lg:pr-16 lg:text-right"
                     : "lg:col-start-2 lg:pl-16",
@@ -53,7 +53,7 @@ function ExperienceTimeline() {
                     {technologies.map((technology, index) => (
                       <span
                         key={index}
-                        className="bg-surface text-muted-foreground group-hover:text-foreground rounded-full px-3 py-1 text-xs transition-colors duration-300"
+                        className="bg-surface border-border text-muted-foreground group-hover:text-foreground rounded-full border px-3 py-1 text-xs transition-colors duration-300"
                       >
                         {technology}
                       </span>
