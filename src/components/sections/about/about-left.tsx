@@ -6,9 +6,9 @@ function AboutLeft() {
           About Me
         </span>
         <h2 className="text-secondary-foreground mt-8 text-4xl leading-tight font-bold md:text-5xl">
-          Building the future,{" "}
+          Building the future
           <span className="text-foreground font-normal">
-            one component at a time.
+            , one component at a time.
           </span>
         </h2>
       </>

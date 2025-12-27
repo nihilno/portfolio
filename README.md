@@ -17,5 +17,14 @@ overall hero on sm!
 
 experiences center text on lg
 
-extract secion titles to separate component.
-same with particles maybe
+extract section titles to separate component.same with particles maybe
+
+app flow left, center, left, center
+
+check all images and optimize if needed
+
+on xl contact info change layout
+
+available -- make text responsive
+
+make overall text responsive

@@ -37,6 +37,7 @@ function WebsiteTechnologiesSlider() {
 
       <div className="mt-8 flex items-center justify-center gap-2">
         <button
+          aria-label="Previous technology"
           onClick={() => handleChangeActive(-1)}
           onKeyDown={(e) => {
             if (e.key === "ArrowLeft") handleChangeActive(-1);
@@ -51,6 +52,7 @@ function WebsiteTechnologiesSlider() {
           {technologies.map((_, index) => (
             <button
               key={index}
+              aria-label={`Go to ${technologies[index].name}`}
               onClick={() => setActive(index)}
               className={cn(
                 "size-3 rounded-full transition-all duration-300 ease-in-out",
@@ -59,10 +61,11 @@ function WebsiteTechnologiesSlider() {
                   : "bg-muted-foreground/30 hover:bg-muted-foreground/70 transition-colors duration-200",
               )}
             />
-          ))}
+          ))}{" "}
         </div>
 
         <button
+          aria-label="Next technology"
           onClick={() => handleChangeActive(1)}
           onKeyDown={(e) => {
             if (e.key === "ArrowLeft") handleChangeActive(-1);

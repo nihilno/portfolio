@@ -1,4 +1,13 @@
-import { Code2, Gem, Github, Lightbulb, Rocket } from "lucide-react";
+import {
+  Code2,
+  Gem,
+  Github,
+  Lightbulb,
+  Mail,
+  MapPin,
+  Phone,
+  Rocket,
+} from "lucide-react";
 
 export const sectionClasses =
   "relative z-10 container mx-auto overflow-hidden py-32";
@@ -12,7 +21,7 @@ export const navLinks = [
 export const socials = [
   {
     icon: (
-      <Github className="group-hover:text-primary size-5 transition-colors" />
+      <Github className="group-hover:text-primary size-5 cursor-pointer transition-colors" />
     ),
     href: "#",
     label: "github",
@@ -162,4 +171,29 @@ export const technologies = [
   },
   { name: "TypeScript", image: "/icons/ts.svg", role: "Type Safety" },
   { name: "GSAP", image: "/icons/gsap.svg", role: "Animations" },
+  { name: "FFmpeg", image: "/icons/ffmpeg.svg", role: "Media Processing" },
+];
+
+const contactInfoIconStyle =
+  "text-primary size-6 group-hover:size-8 transition-all duration-200 ease-in-out";
+
+export const contactInfo = [
+  {
+    label: "Email",
+    icon: <Mail className={contactInfoIconStyle} />,
+    value: "maciej.polowy1@gmail.com",
+    href: "mailto:maciej.polowy1@gmail.com",
+  },
+  {
+    label: "Phone",
+    icon: <Phone className={contactInfoIconStyle} />,
+    value: "+48 724 562 555",
+    href: "tel: +48724562555",
+  },
+  {
+    label: "Location",
+    icon: <MapPin className={contactInfoIconStyle} />,
+    value: "Tarnowskie Góry, Poland",
+    href: "#",
+  },
 ];

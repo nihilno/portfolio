@@ -7,8 +7,9 @@ function ProjectsLeft() {
       <h2 className="mt-8 mb-6 text-4xl leading-tight font-normal md:text-5xl">
         Projects that{" "}
         <span className="text-secondary-foreground font-bold">
-          I am most proud of.
+          I am most proud of
         </span>
+        .
       </h2>
       <p className="text-muted-foreground">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta optio,
