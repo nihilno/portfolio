@@ -45,6 +45,13 @@
     scroll-behavior: smooth;
     scrollbar-gutter: stable both-edges;
   }
+
+  img,
+  svg,
+  video {
+    user-select: none;
+    cursor: default;
+  }
 }
 
 @layer components {

@@ -7,7 +7,6 @@ export const navLinks = [
   { href: "#about", label: "about" },
   { href: "#projects", label: "projects" },
   { href: "#experience", label: "experience" },
-  { href: "#testimonials", label: "testimonials" },
 ];
 
 export const socials = [
@@ -151,4 +150,16 @@ export const experiences = [
     technologies: ["x", "y", "z"],
     current: false,
   },
+];
+
+export const technologies = [
+  { name: "Next.js 16", image: "/icons/nextjs.svg", role: "Main Framework" },
+  { name: "React 19", image: "/icons/react.svg", role: "UI Library" },
+  {
+    name: "Tailwind CSS 4",
+    image: "/icons/tailwind.svg",
+    role: "Styling System",
+  },
+  { name: "TypeScript", image: "/icons/ts.svg", role: "Type Safety" },
+  { name: "GSAP", image: "/icons/gsap.svg", role: "Animations" },
 ];

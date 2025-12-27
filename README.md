@@ -15,4 +15,7 @@ hero buttons on sm
 
 overall hero on sm!
 
-experiecnes center text on lg
+experiences center text on lg
+
+extract secion titles to separate component.
+same with particles maybe

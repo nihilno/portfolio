@@ -12,6 +12,14 @@ declare global {
     animation: string;
     animationDelay: string;
   };
+
+  type SectionTitleProps = {
+    children: React.ReactNode;
+    label: string;
+    title: string;
+    titleAccent: string;
+    center?: boolean;
+  };
 }
 
 export {};

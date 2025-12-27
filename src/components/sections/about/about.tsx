@@ -1,6 +1,6 @@
 import { sectionClasses } from "@/lib/constants";
-import AboutLeft from "./about/about-left";
-import AboutRight from "./about/about-right";
+import AboutLeft from "./about-left";
+import AboutRight from "./about-right";
 
 function About() {
   return (
