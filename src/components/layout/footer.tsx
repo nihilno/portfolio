@@ -11,11 +11,11 @@ function Footer() {
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div className="text-center md:text-left">
             <Logo />
-            <p className="text-muted-foreground mt-2 text-sm">
+            <p className="text-muted-foreground mt-2 text-xs">
               © {currentYear} Maciej Polowy. All rights reserved.
             </p>
           </div>
-          <nav className="flex flex-wrap justify-center gap-6">
+          <nav className="flex flex-wrap justify-center gap-6 lg:-translate-x-25">
             {navLinks.map(({ href, label }) => (
               <Link
                 key={href}

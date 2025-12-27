@@ -11,7 +11,7 @@ function ContactInfo() {
           <a
             key={label}
             href={href}
-            className="hover:bg-surface group group outline-primary/15 border-primary/15 flex cursor-default items-center gap-4 rounded-xl border border-dashed px-2 py-3 transition-colors duration-300 hover:outline sm:p-4"
+            className="hover:bg-surface group group outline-primary/15 border-primary/15 flex items-center gap-4 rounded-xl border border-dashed px-2 py-3 transition-colors duration-300 hover:outline sm:p-4"
           >
             <div className="bg-primary/10 group-hover:bg-primary/20 flex size-10 shrink-0 items-center justify-center rounded-xl transition-colors md:size-14">
               {icon}

@@ -29,13 +29,13 @@ function ProjectsRight() {
                   rel="noopener noreferrer"
                   className="glass hover:bg-primary hover:text-primary-foreground rounded-full p-3 transition-colors duration-300"
                 >
-                  <ArrowUpRight className="size-8" />
+                  <ArrowUpRight className="size-8 cursor-pointer" />
                 </a>
                 <Link
                   href={github}
                   className="glass hover:bg-primary hover:text-primary-foreground rounded-full p-3 transition-colors duration-300"
                 >
-                  <Github className="size-8" />
+                  <Github className="size-8 cursor-pointer" />
                 </Link>
               </div>
             </div>
@@ -45,9 +45,9 @@ function ProjectsRight() {
                 <h3 className="group-hover:text-primary text-xl font-semibold transition-colors">
                   {title}
                 </h3>
-                <Link href={link}>
-                  <ArrowUpRight className="text-muted-foreground group-hover:text-primary size-6 transition-all duration-300 ease-in-out group-hover:translate-x-1 group-hover:-translate-y-1" />
-                </Link>
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                  <ArrowUpRight className="text-muted-foreground group-hover:text-primary size-6 cursor-pointer transition-all duration-300 ease-in-out group-hover:translate-x-1 group-hover:-translate-y-1" />
+                </a>
               </div>
               <p className="text-muted-foreground text-sm">{description}</p>
               <div className="flex flex-wrap items-center gap-2">

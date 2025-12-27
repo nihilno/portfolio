@@ -13,6 +13,7 @@ export const sectionClasses =
   "relative z-10 container mx-auto overflow-hidden py-32";
 
 export const navLinks = [
+  { href: "#techstack", label: "tech stack" },
   { href: "#about", label: "about" },
   { href: "#projects", label: "projects" },
   { href: "#experience", label: "experience" },
@@ -23,38 +24,76 @@ export const socials = [
     icon: (
       <Github className="group-hover:text-primary size-5 cursor-pointer transition-colors" />
     ),
-    href: "#",
+    href: "https://github.com/nihilno",
     label: "github",
   },
 ];
 
 export const skills = [
   "React",
-  "NextJS",
+  "Next.js",
   "Typescript",
   "Node.js",
   "Docker",
   "Vercel",
-  "TailwindCSS",
-  "Shadcn",
+  "Tailwind CSS",
+  "shadcn/ui",
   "GitHub Actions",
   "Prisma",
   "PostgreSQL",
   "GSAP",
   "React Query",
   "Supabase",
+  "Supabase Auth",
   "Clerk",
-  "FFMPEG",
+  "FFmpeg",
   "Stripe",
   "Zustand",
   "React Hook Form",
-  "ZOD",
-  "APIs",
-  "Auth",
+  "Zod",
+  "Inngest",
+  "ThreeJS",
+  "Redis",
+  "MongoDB",
+];
+
+export const precisedSkills = [
+  {
+    title: "Frontend",
+    items: [
+      "React",
+      "Next.js (App Router, SSR, SEO Optimization)",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "GSAP",
+      "Three.js",
+    ],
+  },
+  {
+    title: "State & Forms",
+    items: ["React Query", "Zustand", "React Hook Form", "Zod"],
+  },
+  {
+    title: "Backend & Data",
+    items: ["Node.js", "Prisma", "PostgreSQL", "Supabase", "MongoDB", "Redis"],
+  },
+  {
+    title: "Auth & Payments",
+    items: ["Clerk", "Supabase Auth", "NextAuth.js", "Stripe"],
+  },
+  {
+    title: "Deployment & Tooling",
+    items: ["Vercel", "GitHub Actions", "Docker", "Inngest"],
+  },
+  {
+    title: "Media Processing",
+    items: ["FFmpeg"],
+  },
 ];
 
 const highlightIconStyle =
-  "size-12 rounded-xl bg-primary/10 grid place-items-center mb-4 group-hover:bg-primary/20 transition-colors p-2.5 text-primary duration-400 lg:size-14 ";
+  "size-12 rounded-xl bg-primary/10 grid place-items-center mb-4 group-hover:bg-primary/20 transition-colors p-2.5 text-primary duration-500 lg:size-14 ";
 
 export const highlights = [
   {
@@ -206,7 +245,7 @@ export const technologies = [
     image: "/icons/ts.svg",
     role: "Type Safety",
     description:
-      "Catches errors early during development, helping keep the site stable and reliable.",
+      "Catches any errors I could make early during development, helping keep the site stable and reliable.",
   },
   {
     name: "GSAP",

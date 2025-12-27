@@ -33,9 +33,13 @@ function WebsiteTechnologiesSlider() {
         <p className="text-muted-foreground text-base md:text-lg">
           {technologies[active].role}
         </p>
+
+        <p className="min-h-30 max-w-sm opacity-70">
+          {technologies[active].description}
+        </p>
       </div>
 
-      <div className="mt-12 flex items-center justify-center gap-2">
+      <div className="flex items-center justify-center gap-2">
         <button
           aria-label="Previous technology"
           onClick={() => handleChangeActive(-1)}

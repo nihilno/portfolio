@@ -2,7 +2,6 @@ import AccentButton from "@/components/global/accent-button";
 import Button from "@/components/global/button";
 import { socials } from "@/lib/constants";
 import { ChevronRight, Download } from "lucide-react";
-import Link from "next/link";
 
 function HeroArticle() {
   return (
@@ -29,6 +28,7 @@ function HeroArticle() {
           Contact Me
           <ChevronRight className="size-5 transition-all duration-200 ease-in-out group-hover:translate-x-2" />
         </Button>
+
         <AccentButton>
           <Download className="size-5 transition-all duration-200 ease-in-out group-hover:translate-y-1" />{" "}
           <span>Download CV</span>
@@ -37,14 +37,16 @@ function HeroArticle() {
       <div className="flex items-center justify-center gap-4 lg:justify-start">
         <span className="text-muted-foreground text-sm">Follow Me: </span>
         {socials.map(({ icon, href, label }) => (
-          <Link
+          <a
             key={label}
             href={href}
+            target="_blank"
+            rel="noopener noreferrer"
             className="glass hover:bg-primary/10 group rounded-full p-2 transition-colors"
             aria-label={label}
           >
             {icon}
-          </Link>
+          </a>
         ))}
       </div>
     </article>

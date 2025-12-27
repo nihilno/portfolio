@@ -4,6 +4,7 @@ function Logo() {
   return (
     <button
       aria-label="Back to Top"
+      type="button"
       onClick={() => {
         window.scrollTo({
           top: 0,

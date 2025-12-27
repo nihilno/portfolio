@@ -22,7 +22,7 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          "bg-background text-foreground flex min-h-dvh flex-col antialiased",
+          "bg-background text-foreground flex min-h-dvh cursor-default flex-col antialiased",
         )}
       >
         <Navbar />
