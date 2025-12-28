@@ -15,6 +15,7 @@ function ContactGrid() {
   useGSAP(() => {
     if (!gridRef.current) return;
     const items = gridRef.current.children;
+    if (items.length < 3) return;
 
     gsap.fromTo(
       items[0],
@@ -74,7 +75,7 @@ function ContactGrid() {
         <ContactStatus />
       </div>
 
-      <div className="group w-full overflow-hidden rounded-2xl opacity-25">
+      <div className="group w-full overflow-hidden rounded-2xl">
         <video
           autoPlay
           muted

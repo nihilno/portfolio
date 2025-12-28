@@ -12,8 +12,7 @@ function AboutRight() {
 
   useGSAP(() => {
     if (!gridRef.current) return;
-    const items = gridRef.current.querySelectorAll("div");
-
+    const items = gridRef.current.querySelectorAll(":scope > div");
     items.forEach((item) =>
       gsap.fromTo(
         item,
@@ -45,7 +44,7 @@ function AboutRight() {
           key={title}
           className="glass group cursor-default rounded-2xl p-6 opacity-0 select-none hover:shadow-md lg:flex lg:flex-col lg:items-center lg:justify-center lg:gap-2 lg:text-center"
         >
-          <span className="transtion-all duration-300 ease-in-out group-hover:scale-102">
+          <span className="transition-all duration-300 ease-in-out group-hover:scale-102">
             {icon}
           </span>
           <h3 className="mb-2 text-lg font-semibold lg:text-2xl">{title}</h3>

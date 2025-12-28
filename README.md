@@ -4,3 +4,4 @@ fix ugly outline on tab (focus) buttons
 add error/loading/404
 export same gsap to separete custom hook.
 animate experience section
+we cann add technolgoies used animation w-full

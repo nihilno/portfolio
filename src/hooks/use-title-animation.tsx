@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export function useTitleAnimation(ref: any) {
+export function useTitleAnimation(ref: React.RefObject<HTMLElement>) {
   useGSAP(() => {
     if (!ref.current) return;
 
@@ -22,7 +22,6 @@ export function useTitleAnimation(ref: any) {
         autoAlpha: 1,
         y: 0,
         ease: "power2.out",
-        duration: 1,
         stagger: {
           amount: 0.6,
           from: "start",
