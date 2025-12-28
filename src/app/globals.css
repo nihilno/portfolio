@@ -134,6 +134,12 @@
     animation: marquee 30s linear infinite;
   }
 
+  @media (prefers-reduced-motion: reduce) {
+    .animated-marquee {
+      animation-play-state: paused;
+    }
+  }
+
   .timeline-glow {
     box-shadow:
       0 0 40px color-mix(in srgb, var(--color-primary) 35%, transparent),

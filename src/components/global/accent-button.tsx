@@ -2,7 +2,7 @@ function AccentButton({ children }: { children: React.ReactNode }) {
   return (
     <button
       type="button"
-      className="border-border text-foreground hover:border-primary/50 focus-visible:ring-primary group animated-border relative w-full shrink-0 overflow-visible rounded-full border bg-transparent px-6 py-3 text-base font-medium transition-all duration-1000 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:px-8 lg:py-4 lg:text-lg"
+      className="border-border text-foreground hover:border-primary/50 focus-visible:ring-primary group animated-border bg-surface/50 relative w-full shrink-0 overflow-visible rounded-full border px-6 py-3 text-base font-medium transition-all duration-1000 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:px-8 lg:py-4 lg:text-lg"
     >
       <svg
         className="download-cv-border pointer-events-none absolute top-0 left-0 h-full w-full"

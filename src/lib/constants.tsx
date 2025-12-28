@@ -1,22 +1,45 @@
 import {
+  Briefcase,
   Code2,
+  FolderOpen,
   Gem,
   Github,
+  Layers,
   Lightbulb,
   Mail,
   MapPin,
   Phone,
   Rocket,
+  User,
 } from "lucide-react";
 
 export const sectionClasses =
   "relative z-10 container mx-auto overflow-hidden py-32";
 
+const navLinksClasses =
+  "size-4 group-hover:text-primary/50 transition-colors duration-300";
+
 export const navLinks = [
-  { href: "#techstack", label: "tech stack" },
-  { href: "#about", label: "about" },
-  { href: "#projects", label: "projects" },
-  { href: "#experience", label: "experience" },
+  {
+    href: "#techstack",
+    label: "tech stack",
+    icon: <Layers className={navLinksClasses} />,
+  },
+  {
+    href: "#about",
+    label: "about",
+    icon: <User className={navLinksClasses} />,
+  },
+  {
+    href: "#projects",
+    label: "projects",
+    icon: <FolderOpen className={navLinksClasses} />,
+  },
+  {
+    href: "#experience",
+    label: "experience",
+    icon: <Briefcase className={navLinksClasses} />,
+  },
 ];
 
 export const socials = [
@@ -32,29 +55,36 @@ export const socials = [
 export const skills = [
   "React",
   "Next.js",
-  "Typescript",
-  "Node.js",
-  "Docker",
-  "Vercel",
+  "TypeScript",
   "Tailwind CSS",
   "shadcn/ui",
-  "GitHub Actions",
-  "Prisma",
-  "PostgreSQL",
   "GSAP",
+  "Three.js",
   "React Query",
-  "Supabase",
-  "Supabase Auth",
-  "Clerk",
-  "FFmpeg",
-  "Stripe",
   "Zustand",
   "React Hook Form",
   "Zod",
-  "Inngest",
-  "ThreeJS",
-  "Redis",
+  "Node.js",
+  "Prisma",
+  "PostgreSQL",
+  "Supabase",
   "MongoDB",
+  "Redis",
+  "Clerk",
+  "Supabase Auth",
+  "NextAuth.js",
+  "Stripe",
+  "Vercel",
+  "GitHub Actions",
+  "Docker",
+  "Inngest",
+  "FFmpeg",
+  "Web Vitals",
+  "Lighthouse Optimization",
+  "SEO",
+  "Structured Data",
+  "Media Optimization",
+  "Edge Delivery",
 ];
 
 export const precisedSkills = [
@@ -62,7 +92,7 @@ export const precisedSkills = [
     title: "Frontend",
     items: [
       "React",
-      "Next.js (App Router, SSR, SEO Optimization)",
+      "Next.js",
       "TypeScript",
       "Tailwind CSS",
       "shadcn/ui",
@@ -87,8 +117,13 @@ export const precisedSkills = [
     items: ["Vercel", "GitHub Actions", "Docker", "Inngest"],
   },
   {
-    title: "Media Processing",
-    items: ["FFmpeg"],
+    title: "Performance & Discoverability",
+    items: [
+      "Web Vitals & Lighthouse Optimization",
+      "SEO (Metadata & Structured Data)",
+      "Media Optimization (FFmpeg)",
+      "Fast Loading & Edge Delivery",
+    ],
   },
 ];
 

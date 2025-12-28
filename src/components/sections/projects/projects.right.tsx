@@ -31,12 +31,14 @@ function ProjectsRight() {
                 >
                   <ArrowUpRight className="size-8 cursor-pointer" />
                 </a>
-                <Link
+                <a
                   href={github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="glass hover:bg-primary hover:text-primary-foreground rounded-full p-3 transition-colors duration-300"
                 >
                   <Github className="size-8 cursor-pointer" />
-                </Link>
+                </a>
               </div>
             </div>
 

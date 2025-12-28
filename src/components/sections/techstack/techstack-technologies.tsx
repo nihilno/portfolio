@@ -12,7 +12,7 @@ function TechstackTechnologies() {
             {items.map((skill) => {
               const isPrime = [
                 "React",
-                "Next.js (App Router, SSR, SEO Optimization)",
+                "Next.js",
                 "TypeScript",
                 "Tailwind CSS",
                 "shadcn/ui",
