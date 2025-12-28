@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 
 export const sectionClasses =
-  "relative z-10 container mx-auto overflow-hidden py-32";
+  "relative z-10 container mx-auto overflow-hidden py-32 scroll-mt-12";
 
 const navLinksClasses =
   "size-4 group-hover:text-primary/50 transition-colors duration-300";

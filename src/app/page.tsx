@@ -10,6 +10,7 @@ export default function HomePage() {
   return (
     <div>
       <Hero />
+      {/* todo */}
       <Techstack />
       <About />
       <Projects />

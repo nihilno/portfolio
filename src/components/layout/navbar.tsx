@@ -1,12 +1,37 @@
+"use client";
+
 import Button from "@/components/global/button";
 import Logo from "@/components/global/logo";
 import { navLinks } from "@/lib/constants";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 import Link from "next/link";
 import NavbarMobile from "./navbar-mobile";
+gsap.registerPlugin(ScrollTrigger);
 
 function Navbar() {
+  useGSAP(() => {
+    gsap.to("#navbar", {
+      background: "#0f1418",
+      backdropFilter: "blur(12px)",
+      paddingTop: "30px",
+      paddingBottom: "30px",
+      borderColor: "#ffffff30",
+      scrollTrigger: {
+        trigger: "#navbar",
+        start: "top top",
+        end: "top+=1000px top",
+        scrub: true,
+      },
+    });
+  }, []);
+
   return (
-    <header className="sticky top-0 left-0 z-50 w-full bg-transparent py-5">
+    <header
+      className="border-muted-foreground/15 sticky top-0 left-0 z-50 w-full border-b border-dashed py-5"
+      id="navbar"
+    >
       <nav className="container mx-auto flex items-center justify-between px-6">
         <Logo />
 

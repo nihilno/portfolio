@@ -1,11 +1,41 @@
+"use client";
+
 import AccentButton from "@/components/global/accent-button";
 import Button from "@/components/global/button";
 import { socials } from "@/lib/constants";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import { ChevronRight, Download } from "lucide-react";
+import Link from "next/link";
+import { useRef } from "react";
 
 function HeroArticle() {
+  const articleRef = useRef<HTMLElement | null>(null);
+
+  useGSAP(() => {
+    if (!articleRef.current) return;
+    const tl = gsap.timeline({
+      defaults: { ease: "power2.inOut" },
+    });
+
+    tl.fromTo(
+      articleRef.current,
+      { yPercent: 5, autoAlpha: 0 },
+      { autoAlpha: 1, yPercent: 0 },
+    );
+    tl.from(
+      articleRef.current.querySelectorAll("div"),
+      {
+        opacity: 0,
+        y: 20,
+        stagger: 0.25,
+      },
+      "-=0.2",
+    );
+  }, []);
+
   return (
-    <article className="space-y-8">
+    <article className="space-y-8 opacity-0" ref={articleRef}>
       <div className="text-center lg:text-left">
         <span className="glass text-primary inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs sm:text-sm">
           <span className="bg-primary size-2 animate-pulse rounded-full" />
@@ -24,10 +54,12 @@ function HeroArticle() {
         </p>
       </div>
       <div className="mx-auto mt-12 flex max-w-60 flex-wrap items-center justify-center gap-4 md:flex-nowrap lg:mx-0 lg:justify-start">
-        <Button size="md" className="group lg:px-8 lg:py-4 lg:text-lg">
-          Contact Me
-          <ChevronRight className="size-5 transition-all duration-200 ease-in-out group-hover:translate-x-2" />
-        </Button>
+        <Link href={"#contact"} className="w-full shrink-0">
+          <Button size="md" className="group lg:px-8 lg:py-4 lg:text-lg">
+            Contact Me
+            <ChevronRight className="size-5 transition-all duration-200 ease-in-out group-hover:translate-x-2" />
+          </Button>
+        </Link>
 
         <AccentButton>
           <Download className="size-5 transition-all duration-200 ease-in-out group-hover:translate-y-1" />{" "}

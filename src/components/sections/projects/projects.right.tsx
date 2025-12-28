@@ -2,7 +2,6 @@ import AccentButton from "@/components/global/accent-button";
 import { projects } from "@/lib/constants";
 import { ArrowUpRight, Github } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 
 function ProjectsRight() {
   return (
@@ -67,12 +66,17 @@ function ProjectsRight() {
         ),
       )}
 
-      <Link href={"#"} className="mt-12 place-self-center lg:col-span-2">
+      <a
+        href={"https://github.com/nihilno?tab=repositories"}
+        className="mt-12 place-self-center lg:col-span-2"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <AccentButton>
           <span>View All My Projects</span>
           <ArrowUpRight className="size-5.5" />
         </AccentButton>
-      </Link>
+      </a>
     </div>
   );
 }

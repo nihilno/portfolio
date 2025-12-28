@@ -1,8 +1,20 @@
+"use client";
+
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import Image from "next/image";
 
 function HeroImage() {
+  useGSAP(() => {
+    gsap.fromTo(
+      "#hero-image",
+      { autoAlpha: 0, yPercent: 5 },
+      { autoAlpha: 1, yPercent: 0, ease: "power2.inOut" },
+    );
+  }, []);
+
   return (
-    <div className="relative mx-auto max-w-md">
+    <div className="relative mx-auto max-w-md opacity-0" id="hero-image">
       <div className="from-primary/30 to-primary/10 absolute inset-0 animate-pulse rounded-3xl bg-linear-to-br via-transparent blur-2xl" />
       <div className="glass glow-border relative rounded-3xl p-2">
         <Image

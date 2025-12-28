@@ -6,7 +6,7 @@ import ProjectsRight from "./projects.right";
 
 function Projects() {
   return (
-    <section className="relative -scroll-mt-12" id="projects">
+    <section className="relative scroll-mt-12" id="projects">
       <BgAccent />
 
       <div className={cn(sectionClasses, "px-6")}>

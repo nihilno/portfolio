@@ -25,6 +25,7 @@ function HeroParticles() {
           alt="Hero"
           fill
           className="object-cover opacity-40"
+          priority
         />
       </div>
       <div className="from-background/20 to-background via-background/80 absolute inset-0 bg-linear-to-b" />
