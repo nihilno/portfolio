@@ -128,7 +128,7 @@ export const precisedSkills = [
 ];
 
 const highlightIconStyle =
-  "size-12 rounded-xl bg-primary/10 grid place-items-center mb-4 group-hover:bg-primary/20 transition-colors p-2.5 text-primary duration-500 lg:size-14 ";
+  "size-12 rounded-xl bg-primary/10 grid place-items-center mb-4 group-hover:bg-primary/20 transition-colors p-2.5 text-primary duration-300 lg:size-14 ";
 
 export const highlights = [
   {

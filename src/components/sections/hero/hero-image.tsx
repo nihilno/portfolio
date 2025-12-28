@@ -9,7 +9,7 @@ function HeroImage() {
     gsap.fromTo(
       "#hero-image",
       { autoAlpha: 0, yPercent: 5 },
-      { autoAlpha: 1, yPercent: 0, ease: "power2.inOut" },
+      { autoAlpha: 1, yPercent: 0, ease: "power2.out" },
     );
   }, []);
 

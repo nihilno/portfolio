@@ -65,7 +65,7 @@ function WebsiteTechnologiesSlider() {
                   : "bg-muted-foreground/30 hover:bg-muted-foreground/70 transition-colors duration-200",
               )}
             />
-          ))}{" "}
+          ))}
         </div>
 
         <button

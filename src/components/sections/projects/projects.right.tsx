@@ -1,16 +1,55 @@
+"use client";
+
 import AccentButton from "@/components/global/accent-button";
 import { projects } from "@/lib/constants";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 import { ArrowUpRight, Github } from "lucide-react";
 import Image from "next/image";
+import { useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function ProjectsRight() {
+  const gridRef = useRef<HTMLDivElement | null>(null);
+
+  useGSAP(() => {
+    if (!gridRef.current) return;
+    const cards = gridRef.current.querySelectorAll(":scope > div:not(a)");
+
+    gsap.fromTo(
+      cards,
+      {
+        autoAlpha: 0,
+        xPercent: (index) => {
+          return index % 2 === 0 ? -16 : 16;
+        },
+        scale: 0.9,
+      },
+      {
+        autoAlpha: 1,
+        xPercent: 0,
+        scale: 1,
+        ease: "power3.out",
+        stagger: 0.15,
+        scrollTrigger: {
+          trigger: gridRef.current,
+          start: "top 85%",
+          end: "bottom 25%",
+          scrub: true,
+        },
+      },
+    );
+  }, []);
+
   return (
-    <div className="grid h-full grid-cols-1 gap-8 lg:grid-cols-2">
+    <div className="grid h-full grid-cols-1 gap-8 lg:grid-cols-2" ref={gridRef}>
       {projects.map(
         ({ title, image, description, tags, link, github }, index) => (
           <div
             key={`${image}-${index}`}
-            className="group glass overflow-hidden rounded-2xl"
+            className="group glass overflow-hidden rounded-2xl opacity-0"
           >
             <div className="relative aspect-video overflow-hidden">
               <Image

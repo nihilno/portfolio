@@ -1,11 +1,18 @@
+"use client";
+
 import BgAccent from "@/components/global/bg-accent";
+import { useTitleAnimation } from "@/hooks/use-title-animation";
+import { useRef } from "react";
 import WebsiteTechnologiesSlider from "./website-technologies-slider";
 
 function WebsiteTechnologies() {
+  const articleRef = useRef<HTMLElement | null>(null);
+  useTitleAnimation(articleRef);
+
   return (
     <section className="glass relative z-10 my-32 p-6 text-center">
       <BgAccent />
-      <article className="mx-auto mb-16 max-w-5xl">
+      <article className="mx-auto mb-16 max-w-5xl" ref={articleRef}>
         <h2 className="text-secondary-foreground glow-text mx-auto mt-8 mb-6 max-w-[14ch] text-4xl leading-tight font-bold md:text-5xl">
           Built with
         </h2>

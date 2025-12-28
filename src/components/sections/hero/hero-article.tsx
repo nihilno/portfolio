@@ -15,7 +15,7 @@ function HeroArticle() {
   useGSAP(() => {
     if (!articleRef.current) return;
     const tl = gsap.timeline({
-      defaults: { ease: "power2.inOut" },
+      defaults: { ease: "power2.out" },
     });
 
     tl.fromTo(
