@@ -75,7 +75,7 @@ function ContactGrid() {
         <ContactStatus />
       </div>
 
-      <div className="group w-full overflow-hidden rounded-2xl">
+      <div className="group w-full overflow-hidden rounded-2xl opacity-25">
         <video
           autoPlay
           muted
