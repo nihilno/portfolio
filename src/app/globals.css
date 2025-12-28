@@ -57,6 +57,16 @@
   a {
     cursor: pointer;
   }
+
+  :focus-visible {
+    outline: 1px solid rgba(32, 178, 166, 0.25);
+    outline-offset: 2px;
+    border-radius: 2rem;
+  }
+
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
 }
 
 @layer components {

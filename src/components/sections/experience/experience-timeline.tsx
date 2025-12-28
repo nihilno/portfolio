@@ -30,7 +30,7 @@ function ExperienceTimeline() {
             scrollTrigger: {
               trigger: item,
               scrub: true,
-              end: "top 25%",
+              end: "top 35%",
             },
           },
         ),

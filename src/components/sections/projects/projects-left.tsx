@@ -1,11 +1,7 @@
 "use client";
 
 import { useTitleCenter } from "@/hooks/use-title-animation";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
-
-gsap.registerPlugin(ScrollTrigger);
 
 function ProjectsLeft() {
   const articleRef = useRef<HTMLElement | null>(null);

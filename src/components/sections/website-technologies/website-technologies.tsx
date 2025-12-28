@@ -2,12 +2,8 @@
 
 import BgAccent from "@/components/global/bg-accent";
 import { useTitleCenter } from "@/hooks/use-title-animation";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
 import WebsiteTechnologiesSlider from "./website-technologies-slider";
-
-gsap.registerPlugin(ScrollTrigger);
 
 function WebsiteTechnologies() {
   const articleRef = useRef<HTMLElement | null>(null);
