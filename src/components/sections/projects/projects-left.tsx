@@ -1,6 +1,6 @@
 "use client";
 
-import { useTitleAnimation } from "@/hooks/use-title-animation";
+import { useTitleCenter } from "@/hooks/use-title-animation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function ProjectsLeft() {
   const articleRef = useRef<HTMLElement | null>(null);
-  useTitleAnimation(articleRef);
+  useTitleCenter(articleRef);
 
   return (
     <article className="mx-auto mb-16 max-w-3xl text-center" ref={articleRef}>

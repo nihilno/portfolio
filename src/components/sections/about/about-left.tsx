@@ -1,37 +1,38 @@
 "use client";
 
+import { gsap } from "@/lib/gsap";
 import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
-gsap.registerPlugin(ScrollTrigger);
 
 function AboutLeft() {
   const articleRef = useRef<HTMLElement | null>(null);
 
-  useGSAP(() => {
-    if (!articleRef.current) return;
-    const items = articleRef.current.querySelectorAll("div");
+  useGSAP(
+    () => {
+      if (!articleRef.current) return;
+      const items = articleRef.current.querySelectorAll("div");
 
-    items.forEach((item) => {
-      gsap.fromTo(
-        item,
-        { autoAlpha: 0, xPercent: -8, scale: 0.95 },
-        {
-          autoAlpha: 1,
-          xPercent: 0,
-          scale: 1,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: item,
-            start: "top 100%",
-            end: "top 60%",
-            scrub: true,
+      items.forEach((item) => {
+        gsap.fromTo(
+          item,
+          { autoAlpha: 0, xPercent: -8, scale: 0.95 },
+          {
+            autoAlpha: 1,
+            xPercent: 0,
+            scale: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: item,
+              start: "top 100%",
+              end: "top 60%",
+              scrub: true,
+            },
           },
-        },
-      );
-    });
-  }, []);
+        );
+      });
+    },
+    { scope: articleRef },
+  );
 
   return (
     <article className="space-y-8" ref={articleRef}>

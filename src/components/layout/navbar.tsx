@@ -3,12 +3,10 @@
 import Button from "@/components/global/button";
 import Logo from "@/components/global/logo";
 import { navLinks } from "@/lib/constants";
+import { gsap } from "@/lib/gsap";
 import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
 import Link from "next/link";
 import NavbarMobile from "./navbar-mobile";
-gsap.registerPlugin(ScrollTrigger);
 
 function Navbar() {
   useGSAP(() => {

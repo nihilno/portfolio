@@ -1,42 +1,15 @@
 "use client";
 
 import BgAccent from "@/components/global/bg-accent";
+import { useTitleLeft } from "@/hooks/use-title-left";
 import { sectionClasses } from "@/lib/constants";
 import { cn } from "@/lib/utils";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
 import ContactGrid from "./contact-grid";
 
-gsap.registerPlugin(ScrollTrigger);
-
 function Contact() {
   const divRef = useRef<HTMLDivElement | null>(null);
-
-  useGSAP(() => {
-    if (!divRef.current) return;
-    const items = Array.from(divRef.current.children);
-
-    items.forEach((item) => {
-      gsap.fromTo(
-        item,
-        { autoAlpha: 0, xPercent: -8, scale: 0.95 },
-        {
-          autoAlpha: 1,
-          xPercent: 0,
-          scale: 1,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: item,
-            start: "top 85%",
-            end: "top 60%",
-            scrub: true,
-          },
-        },
-      );
-    });
-  }, []);
+  useTitleLeft(divRef);
 
   return (
     <section className="relative" id="contact">

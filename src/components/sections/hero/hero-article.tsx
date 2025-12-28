@@ -12,27 +12,30 @@ import { useRef } from "react";
 function HeroArticle() {
   const articleRef = useRef<HTMLElement | null>(null);
 
-  useGSAP(() => {
-    if (!articleRef.current) return;
-    const tl = gsap.timeline({
-      defaults: { ease: "power2.out" },
-    });
+  useGSAP(
+    () => {
+      if (!articleRef.current) return;
+      const tl = gsap.timeline({
+        defaults: { ease: "power2.out" },
+      });
 
-    tl.fromTo(
-      articleRef.current,
-      { yPercent: 5, autoAlpha: 0 },
-      { autoAlpha: 1, yPercent: 0 },
-    );
-    tl.from(
-      articleRef.current.querySelectorAll("div"),
-      {
-        opacity: 0,
-        y: 20,
-        stagger: 0.25,
-      },
-      "-=0.2",
-    );
-  }, []);
+      tl.fromTo(
+        articleRef.current,
+        { yPercent: 5, autoAlpha: 0 },
+        { autoAlpha: 1, yPercent: 0 },
+      );
+      tl.from(
+        articleRef.current.querySelectorAll("div"),
+        {
+          opacity: 0,
+          y: 20,
+          stagger: 0.25,
+        },
+        "-=0.2",
+      );
+    },
+    { scope: articleRef },
+  );
 
   return (
     <article className="space-y-8 opacity-0" ref={articleRef}>

@@ -1,15 +1,11 @@
 "use client";
 
+import { gsap } from "@/lib/gsap";
 import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
 
-gsap.registerPlugin(ScrollTrigger);
-
-export function useTitleAnimation(ref: React.RefObject<HTMLElement | null>) {
+export function useTitleCenter(ref: React.RefObject<HTMLElement | null>) {
   useGSAP(() => {
     if (!ref.current) return;
-
     const items = Array.from(ref.current.children);
 
     gsap.fromTo(
@@ -26,7 +22,7 @@ export function useTitleAnimation(ref: React.RefObject<HTMLElement | null>) {
         scrollTrigger: {
           trigger: ref.current,
           start: "top 80%",
-          end: "top center",
+          end: "top 20%",
           scrub: true,
         },
       },

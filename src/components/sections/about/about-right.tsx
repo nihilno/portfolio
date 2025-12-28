@@ -1,38 +1,39 @@
 "use client";
 
 import { highlights } from "@/lib/constants";
+import { gsap } from "@/lib/gsap";
 import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
-gsap.registerPlugin(ScrollTrigger);
 
 function AboutRight() {
   const gridRef = useRef<HTMLDivElement | null>(null);
 
-  useGSAP(() => {
-    if (!gridRef.current) return;
-    const items = gridRef.current.querySelectorAll(":scope > div");
-    items.forEach((item) =>
-      gsap.fromTo(
-        item,
-        { autoAlpha: 0, xPercent: 48, scale: 0.9 },
-        {
-          autoAlpha: 1,
-          xPercent: 0,
-          scale: 1,
-          ease: "power2.out",
+  useGSAP(
+    () => {
+      if (!gridRef.current) return;
+      const items = gridRef.current.querySelectorAll(":scope > div");
+      items.forEach((item) =>
+        gsap.fromTo(
+          item,
+          { autoAlpha: 0, xPercent: 48, scale: 0.9 },
+          {
+            autoAlpha: 1,
+            xPercent: 0,
+            scale: 1,
+            ease: "power2.out",
 
-          scrollTrigger: {
-            trigger: item,
-            start: "top 100%",
-            end: "top 60%",
-            scrub: true,
+            scrollTrigger: {
+              trigger: item,
+              start: "top 100%",
+              end: "top 60%",
+              scrub: true,
+            },
           },
-        },
-      ),
-    );
-  }, []);
+        ),
+      );
+    },
+    { scope: gridRef },
+  );
 
   return (
     <div

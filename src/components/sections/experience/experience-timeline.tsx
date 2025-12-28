@@ -1,43 +1,43 @@
 "use client";
 
 import { experiences } from "@/lib/constants";
+import { gsap } from "@/lib/gsap";
 import { cn } from "@/lib/utils";
 import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
-
-gsap.registerPlugin(ScrollTrigger);
 
 function ExperienceTimeline() {
   const divRef = useRef<HTMLDivElement | null>(null);
 
-  useGSAP(() => {
-    if (!divRef.current) return;
-    const items = divRef.current.children;
+  useGSAP(
+    () => {
+      if (!divRef.current) return;
+      const items = divRef.current.children;
 
-    Array.from(items).forEach((item) =>
-      gsap.fromTo(
-        item,
-        {
-          autoAlpha: 0,
-          scale: 0,
-          yPercent: 24,
-        },
-        {
-          autoAlpha: 1,
-          scale: 1,
-          yPercent: 0,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: item,
-            scrub: true,
-            end: "top 25%",
+      Array.from(items).forEach((item) =>
+        gsap.fromTo(
+          item,
+          {
+            autoAlpha: 0,
+            scale: 0,
+            yPercent: 24,
           },
-        },
-      ),
-    );
-  }, []);
+          {
+            autoAlpha: 1,
+            scale: 1,
+            yPercent: 0,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: item,
+              scrub: true,
+              end: "top 25%",
+            },
+          },
+        ),
+      );
+    },
+    { scope: divRef },
+  );
 
   return (
     <div className="relative">

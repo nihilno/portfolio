@@ -1,7 +1,7 @@
 "use client";
 
 import BgAccent from "@/components/global/bg-accent";
-import { useTitleAnimation } from "@/hooks/use-title-animation";
+import { useTitleCenter } from "@/hooks/use-title-animation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function WebsiteTechnologies() {
   const articleRef = useRef<HTMLElement | null>(null);
-  useTitleAnimation(articleRef);
+  useTitleCenter(articleRef);
 
   return (
     <section className="glass relative z-10 mx-auto w-full p-6 text-center">
