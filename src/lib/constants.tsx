@@ -91,7 +91,7 @@ export const skills = [
   "Edge Delivery",
 ];
 
-const precisedSkillsClasses = "size-5 ";
+const precisedSkillsClasses = "size-5 md:size-6";
 
 export const proficientSkills = [
   "React",

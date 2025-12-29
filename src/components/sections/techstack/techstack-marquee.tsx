@@ -3,10 +3,6 @@ import { skills } from "@/lib/constants";
 function TechstackMarquee() {
   return (
     <>
-      <p className="text-secondary-foreground mb-6 text-center text-sm font-medium tracking-wider uppercase">
-        Technologies I work with
-      </p>
-
       <div className="relative overflow-hidden">
         <div className="from-background pointer-events-none absolute inset-y-0 left-0 z-10 w-32 bg-linear-to-r to-transparent" />
         <div className="from-background pointer-events-none absolute inset-y-0 right-0 z-10 w-32 bg-linear-to-l to-transparent" />
