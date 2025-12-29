@@ -2,14 +2,18 @@ import {
   Briefcase,
   Code2,
   FolderOpen,
+  Gauge,
   Gem,
   Github,
   Layers,
   Lightbulb,
   Mail,
   MapPin,
+  Monitor,
   Phone,
   Rocket,
+  Server,
+  ShieldCheck,
   User,
 } from "lucide-react";
 
@@ -87,9 +91,38 @@ export const skills = [
   "Edge Delivery",
 ];
 
+const precisedSkillsClasses = "size-5 ";
+
+export const proficientSkills = [
+  "React",
+  "Next.js",
+  "TypeScript",
+  "Tailwind CSS",
+  "Node.js",
+  "Prisma",
+  "PostgreSQL",
+  "shadcn/ui",
+  "GSAP",
+  "React Query",
+  "Zustand",
+  "React Hook Form",
+  "Zod",
+  "Supabase",
+  "Supabase Auth",
+  "Clerk",
+  "Vercel",
+  "GitHub Actions",
+  "Docker",
+  "Lighthouse Optimization",
+  "FFmpeg",
+  "Fast Loading & Edge Delivery",
+  "SEO",
+];
+
 export const precisedSkills = [
   {
     title: "Frontend",
+    icon: <Monitor className={precisedSkillsClasses} />,
     items: [
       "React",
       "Next.js",
@@ -102,27 +135,32 @@ export const precisedSkills = [
   },
   {
     title: "State & Forms",
+    icon: <Layers className={precisedSkillsClasses} />,
     items: ["React Query", "Zustand", "React Hook Form", "Zod"],
   },
   {
     title: "Backend & Data",
+    icon: <Server className={precisedSkillsClasses} />,
     items: ["Node.js", "Prisma", "PostgreSQL", "Supabase", "MongoDB", "Redis"],
   },
   {
     title: "Auth & Payments",
+    icon: <ShieldCheck className={precisedSkillsClasses} />,
     items: ["Clerk", "Supabase Auth", "NextAuth.js", "Stripe"],
   },
   {
     title: "Deployment & Tooling",
+    icon: <Rocket className={precisedSkillsClasses} />,
     items: ["Vercel", "GitHub Actions", "Docker", "Inngest"],
   },
   {
-    title: "Performance & Discoverability",
+    title: "Performance",
+    icon: <Gauge className={precisedSkillsClasses} />,
     items: [
-      "Web Vitals & Lighthouse Optimization",
-      "SEO (Metadata & Structured Data)",
-      "Media Optimization (FFmpeg)",
+      "Lighthouse Optimization",
+      "SEO",
       "Fast Loading & Edge Delivery",
+      "FFmpeg",
     ],
   },
 ];
