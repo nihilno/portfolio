@@ -2,79 +2,106 @@
 
 import { Badge } from "@/components/ui/badge";
 import { precisedSkills, proficientSkills } from "@/lib/constants";
+import { oswald } from "@/lib/fonts";
 import { gsap } from "@/lib/gsap";
+import { cn } from "@/lib/utils";
 import { useGSAP } from "@gsap/react";
+import { ChevronDown } from "lucide-react";
 import { useRef } from "react";
 
 function TechstackTechnologies() {
   const proficientSet = new Set(proficientSkills.map((s) => s.toLowerCase()));
-
-  const titleRef = useRef<HTMLHeadingElement | null>(null);
+  const divRef = useRef<HTMLDivElement | null>(null);
+  const headingRef = useRef<HTMLDivElement | null>(null);
   const gridRef = useRef<HTMLDivElement | null>(null);
 
   useGSAP(() => {
+    if (!divRef.current || !headingRef.current || !gridRef.current) return;
+
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: gridRef.current,
-        start: "top 80%",
-        end: "top center",
-        scrub: true,
+        trigger: divRef.current,
+        start: "top top",
+        end: "+=175%",
+        scrub: 1,
+        pin: true,
+        pinType: "transform",
+        anticipatePin: 1,
       },
     });
 
-    if (!titleRef.current) return;
-
     tl.to(
-      titleRef.current,
+      headingRef.current,
       {
         autoAlpha: 0.25,
-        ease: "power1.inOut",
-        fontSize: "156px",
+        scale: 0.75,
+        ease: "power2.inOut",
+        duration: 1,
       },
       0,
     );
 
-    if (!gridRef.current) return;
+    tl.to(
+      gridRef.current,
+      {
+        autoAlpha: 1,
+        ease: "power2.out",
+        duration: 0.8,
+      },
+      0.3,
+    );
 
-    const cards = Array.from(gridRef.current.children);
-    cards.forEach((card, index) => {
-      const side = index % 3 === 0 ? -80 : index % 3 === 1 ? 0 : 80;
+    const cards = gsap.utils.toArray(gridRef.current.children);
 
-      tl.fromTo(
-        card,
-        { autoAlpha: 0, x: side, y: 24, scale: 0.9 },
-        {
-          autoAlpha: 1,
-          x: 0,
-          y: 0,
-          scale: 1,
-          ease: "power2.out",
+    tl.fromTo(
+      cards,
+      { autoAlpha: 0, y: 80 },
+      {
+        autoAlpha: 1,
+        y: 0,
+        ease: "power2.out",
+        stagger: {
+          amount: 0.5,
+          from: "edges",
         },
-        0,
-      );
-    });
+        duration: 1,
+      },
+      0.5,
+    );
   }, []);
 
   return (
-    <div className="relative">
-      <h1
-        className="text-secondary-foreground glow-text absolute top-1/2 left-1/2 -z-10 mb-6 -translate-x-1/2 -translate-y-1/2 text-center text-[192px] leading-36 font-bold uppercase"
-        ref={titleRef}
-      >
-        Technologies I work with
-      </h1>
+    <div
+      className="flex min-h-dvh flex-col items-center justify-center"
+      ref={divRef}
+    >
+      <div ref={headingRef}>
+        <h1
+          className={cn(
+            "text-secondary-foreground glow-text text-center text-5xl font-bold uppercase sm:text-8xl xl:text-[192px] xl:leading-42",
+            oswald.className,
+          )}
+        >
+          Technologies <br /> I work with
+        </h1>
+
+        <div className="text-foreground/75 flex translate-y-32 flex-col items-center gap-2">
+          <span className="text-xs tracking-wider uppercase">Scroll</span>
+          <ChevronDown className="size-6 animate-bounce" />
+        </div>
+      </div>
       <div
-        className="relative z-10 mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        className="absolute top-1/2 left-1/2 z-10 mt-16 grid w-full -translate-x-1/2 -translate-y-1/2 grid-cols-1 gap-6 opacity-1 sm:grid-cols-2 lg:grid-cols-3"
         ref={gridRef}
       >
         {precisedSkills.map(({ title, icon, items }) => (
           <div
             key={title}
-            className="glass group hover:border-primary flex flex-col rounded-2xl p-6 shadow-lg"
+            className="glass group flex flex-col rounded-2xl p-6 opacity-0 shadow-lg"
           >
             <div className="mb-8">
               <div className="border-muted-foreground/50 group-hover:border-muted-foreground/90 flex items-center justify-center gap-2 border-b border-dashed pb-6 text-center transition-colors duration-300">
-                <span className="bg-primary/20 text-primary glow-border group-hover:bg-primary/30 mr-auto rounded-lg p-2 transition-colors duration-700">
+                <span className="bg-primary/20 text-primary glow-border group-hover:bg-primary/40 mr-auto rounded-lg p-2 transition-colors duration-700">
                   {icon}
                 </span>
                 <h3 className="text-foreground/80 group-hover:text-primary/75 line-clamp-1 text-lg font-bold transition-colors duration-300 sm:text-xl">
@@ -97,7 +124,7 @@ function TechstackTechnologies() {
                 })}
               </div>
             </div>
-            <div className="bg-foreground/15 group-hover:bg-muted-foreground/90 mx-auto mt-auto h-1 w-14 rounded-full transition-colors duration-300" />
+            <div className="bg-foreground/15 group-hover:bg-primary mx-auto mt-auto h-1 w-14 rounded-full transition-colors duration-300" />
           </div>
         ))}
       </div>

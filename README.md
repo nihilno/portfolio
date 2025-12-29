@@ -3,4 +3,4 @@ podmiana zdjec
 
 add error/loading/404
 
-make techstack pinned, change spaceing
+alter <640px techstack pin
