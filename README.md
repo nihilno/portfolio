@@ -1,7 +1,4 @@
-check and edit CONSTS AND headings/paragraphs SO ITS NOT CORNY/placeholder like
-podmiana zdjec
+check and edit CONSTS AND headings/paragraphs SO ITS NOT CORNY/placeholder like, podmiana zdjec
+alter <640px techstack pin, fix legend
 
-add logo?
-
-alter <640px techstack pin
-fix legend
+animate technolgoy?

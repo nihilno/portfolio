@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 function Logo() {
   return (
     <button
@@ -10,9 +12,16 @@ function Logo() {
           top: 0,
         });
       }}
-      className="hover:text-primary text-xl font-bold tracking-tight transition-all duration-300 ease-in-out hover:-translate-y-0.5"
+      className="hover:text-primary bg-foreground hover:bg-primary glow-border rounded-full transition-all duration-300 ease-in-out hover:-translate-y-0.5"
     >
-      MP<span className="text-primary hover:glow-text">.</span>
+      {/* MP<span className="text-primary glow-text">.</span> */}
+      <Image
+        src={"/logo.png"}
+        alt="Logo - MP"
+        height={40}
+        width={40}
+        className="cursor-pointer rounded-2xl p-0.5"
+      />
     </button>
   );
 }

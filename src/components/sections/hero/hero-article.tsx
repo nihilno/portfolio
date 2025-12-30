@@ -77,7 +77,7 @@ function HeroArticle() {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="glass hover:bg-primary/10 group rounded-full p-2 transition-colors"
+            className="glass hover:bg-primary/10 group glow-border rounded-full p-2 transition-colors"
             aria-label={label}
           >
             {icon}

@@ -25,7 +25,7 @@ export default function Error({
           Error message:{" "}
           <span>
             {error.message ||
-              "An error occured, but don't worry — we'll get you back."}
+              "An error occurred, but don't worry — we'll get you back."}
           </span>
         </p>
         <div className="mt-6 flex items-center gap-8 md:mt-12">
