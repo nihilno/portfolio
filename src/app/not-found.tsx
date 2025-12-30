@@ -64,7 +64,7 @@ export default function NotFound() {
 
   return (
     <section
-      className="border-primary relative h-full cursor-default overflow-y-hidden border-b border-dashed py-16 opacity-0 select-none xl:mt-16"
+      className="border-primary relative h-full cursor-default border-b border-dashed py-16 opacity-0 select-none md:overflow-y-hidden xl:mt-16"
       ref={sectionRef}
     >
       <div className="z-10 container mx-auto p-6">

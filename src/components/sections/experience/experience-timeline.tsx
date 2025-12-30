@@ -76,7 +76,9 @@ function ExperienceTimeline() {
                   <span className="text-primary text-sm font-medium">
                     {period}
                   </span>
-                  <h3 className="mt-2 text-xl font-semibold">{role}</h3>
+                  <h3 className="glow-text mt-2 text-xl font-semibold">
+                    {role}
+                  </h3>
                   <p className="text-muted-foreground">{company}</p>
                   <p className="text-muted-foreground group-hover:text-foreground/70 mt-4 text-sm transition-colors duration-300">
                     {description}

@@ -17,7 +17,7 @@ function WebsiteTechnologiesSlider() {
   return (
     <div>
       <div className="flex flex-col items-center gap-6 text-center">
-        <h3 className="text-foreground text-2xl font-semibold">
+        <h3 className="text-foreground glow-text text-2xl font-semibold">
           {technologies[active].name}
         </h3>
 

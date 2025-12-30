@@ -3,7 +3,7 @@ import { contactInfo } from "@/lib/constants";
 function ContactInfo() {
   return (
     <>
-      <h3 className="mb-6 text-2xl font-semibold md:text-3xl">
+      <h3 className="glow-text mb-6 text-2xl font-semibold md:text-3xl">
         Contact Information
       </h3>
       <div className="space-y-4">

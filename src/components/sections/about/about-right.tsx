@@ -48,7 +48,9 @@ function AboutRight() {
           <span className="transition-all duration-300 ease-in-out group-hover:scale-102">
             {icon}
           </span>
-          <h3 className="mb-2 text-lg font-semibold lg:text-2xl">{title}</h3>
+          <h3 className="glow-text mb-2 text-lg font-semibold lg:text-2xl">
+            {title}
+          </h3>
           <p className="text-muted-foreground text-sm lg:text-base">
             {description}
           </p>
