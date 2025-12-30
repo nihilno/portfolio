@@ -21,6 +21,7 @@ function Logo() {
         height={40}
         width={40}
         className="cursor-pointer rounded-2xl p-0.5"
+        priority
       />
     </button>
   );

@@ -8,6 +8,22 @@ export const metadata: Metadata = {
     template: "%s | Maciej Polowy",
     default: "Portfolio | Maciej Polowy",
   },
+  description:
+    "Full-Stack Developer Portfolio. Explore my projects built with Next.js, React, TypeScript, and modern web technologies. Passionate about creating performant and user-friendly applications.",
+  openGraph: {
+    title: "Portfolio | Maciej Polowy",
+    description:
+      "Full-Stack Developer Portfolio. Explore my projects built with Next.js, React, TypeScript, and modern web technologies. Passionate about creating performant and user-friendly applications.",
+    url: "https://your-domain.com",
+    siteName: "Maciej Portfolio",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Portfolio | Maciej Polowy",
+    description:
+      "Full-Stack Developer Portfolio. Explore my projects built with Next.js, React, TypeScript, and modern web technologies. Passionate about creating performant and user-friendly applications.",
+  },
 };
 
 export default function RootLayout({

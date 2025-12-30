@@ -11,7 +11,7 @@ function HeroParticles() {
       <div className="absolute inset-0">
         <Image
           src="/hero-bg.jpg"
-          alt="Hero"
+          alt="Hero Background"
           fill
           className="object-cover opacity-40"
           priority

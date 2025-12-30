@@ -68,18 +68,18 @@ export default function NotFound() {
       ref={sectionRef}
     >
       <div className="z-10 container mx-auto p-6">
-        <h2
+        <h1
           ref={h2Ref}
           className="text-primary glow-text absolute top-1/2 left-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 text-[168px] font-bold opacity-0 sm:text-[320px] lg:text-[480px] 2xl:text-[720px]"
         >
           404
-        </h2>
-        <h3
+        </h1>
+        <h2
           ref={h3Ref}
           className="text-primary glow-text mb-4 text-3xl font-light"
         >
           Page not found
-        </h3>
+        </h2>
         <div
           ref={divRef}
           className={cn(
@@ -88,11 +88,11 @@ export default function NotFound() {
             "text-6xl leading-32 tracking-wider sm:text-8xl sm:leading-38 lg:text-[192px]",
           )}
         >
-          <h1 className="mr-auto">Something</h1>
-          <h1 className="ml-auto text-nowrap italic">
+          <h3 className="mr-auto">Something</h3>
+          <h3 className="ml-auto text-nowrap italic">
             went wrong
             <span className="glow-text text-primary">.</span>
-          </h1>
+          </h3>
         </div>
         <div
           className="mx-auto mt-32 flex w-fit flex-col items-baseline gap-4"

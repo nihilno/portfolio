@@ -22,6 +22,8 @@ function HeroImage() {
           alt="Maciej Polowy"
           width={512}
           height={640}
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
+          priority
           className="aspect-4/5 w-full overflow-hidden rounded-2xl border object-cover"
         />
 
