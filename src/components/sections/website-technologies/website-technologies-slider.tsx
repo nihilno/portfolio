@@ -26,6 +26,7 @@ function WebsiteTechnologiesSlider() {
             src={technologies[active].image}
             fill
             alt={technologies[active].name}
+            priority
             className="overflow-hidden object-contain p-1.5 opacity-75 transition-all duration-600 ease-in-out group-hover:scale-110 group-hover:opacity-100"
           />
         </div>

@@ -1,5 +1,3 @@
-import Footer from "@/components/layout/footer";
-import Navbar from "@/components/layout/navbar";
 import { inter } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -25,9 +23,7 @@ export default function RootLayout({
           "bg-background text-foreground flex min-h-dvh cursor-default flex-col antialiased",
         )}
       >
-        <Navbar />
         <main className="flex-1">{children}</main>
-        <Footer />
       </body>
     </html>
   );

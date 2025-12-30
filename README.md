@@ -4,3 +4,4 @@ podmiana zdjec
 add error/loading/404
 
 alter <640px techstack pin
+fix legend

@@ -91,7 +91,7 @@ function TechstackTechnologies() {
         </div>
       </div>
       <div
-        className="absolute top-1/2 left-1/2 z-10 mt-16 grid w-full -translate-x-1/2 -translate-y-1/2 grid-cols-1 gap-6 opacity-1 sm:grid-cols-2 lg:grid-cols-3"
+        className="absolute top-1/2 left-1/2 z-10 mt-16 grid w-full -translate-x-1/2 -translate-y-1/2 grid-cols-1 gap-6 opacity-0 sm:grid-cols-2 lg:grid-cols-3"
         ref={gridRef}
       >
         {precisedSkills.map(({ title, icon, items }) => (
