@@ -23,7 +23,7 @@ export default function NotFound() {
     if (!sectionRef.current) return;
     tl.to(sectionRef.current, { autoAlpha: 1 });
 
-    if (!(h2Ref.current || h3Ref.current)) return;
+    if (!(h2Ref.current && h3Ref.current)) return;
     tl.from(
       h2Ref.current,
       {
@@ -58,19 +58,19 @@ export default function NotFound() {
         autoAlpha: 0,
         ease: "power2.in",
       },
-      1,
+      1.5,
     );
   }, []);
 
   return (
     <section
-      className="border-primary relative mt-32 h-full cursor-default overflow-y-hidden border-b border-dashed py-16 opacity-0 select-none"
+      className="border-primary relative h-full cursor-default overflow-y-hidden border-b border-dashed py-16 opacity-0 select-none xl:mt-16"
       ref={sectionRef}
     >
       <div className="z-10 container mx-auto p-6">
         <h2
           ref={h2Ref}
-          className="text-primary glow-text absolute top-1/2 left-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 text-[720px] font-bold opacity-0"
+          className="text-primary glow-text absolute top-1/2 left-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 text-[168px] font-bold opacity-0 sm:text-[320px] lg:text-[480px] 2xl:text-[720px]"
         >
           404
         </h2>
@@ -83,14 +83,15 @@ export default function NotFound() {
         <div
           ref={divRef}
           className={cn(
-            "flex flex-col",
+            "mt-16 flex flex-col",
             oswald.className,
-            "text-[192px] leading-38 tracking-wider",
+            "text-6xl leading-32 tracking-wider sm:text-8xl sm:leading-38 lg:text-[192px]",
           )}
         >
           <h1 className="mr-auto">Something</h1>
-          <h1 className="ml-auto italic">
-            went wrong<span className="glow-text text-primary">.</span>
+          <h1 className="ml-auto text-nowrap italic">
+            went wrong
+            <span className="glow-text text-primary">.</span>
           </h1>
         </div>
         <div
@@ -98,7 +99,7 @@ export default function NotFound() {
           ref={buttonRef}
         >
           <p className="p-1.5 text-2xl">
-            The page you are looking for does not exists or may have been moved.
+            The page you are looking for does not exist or may have been moved.
           </p>
           <button
             onClick={() => replace("/")}
