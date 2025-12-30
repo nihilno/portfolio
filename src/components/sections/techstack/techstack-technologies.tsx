@@ -72,7 +72,7 @@ function TechstackTechnologies() {
 
   return (
     <div
-      className="flex min-h-dvh flex-col items-center justify-center"
+      className="flex min-h-[180dvh] flex-col items-center justify-center sm:min-h-dvh"
       ref={divRef}
     >
       <div ref={headingRef}>
@@ -80,6 +80,7 @@ function TechstackTechnologies() {
           className={cn(
             "text-secondary-foreground glow-text text-center text-5xl font-bold uppercase sm:text-8xl xl:text-[192px] xl:leading-42",
             oswald.className,
+            "-translate-y-80 sm:translate-0",
           )}
         >
           Technologies <br /> I work with
@@ -97,7 +98,7 @@ function TechstackTechnologies() {
         {precisedSkills.map(({ title, icon, items }) => (
           <div
             key={title}
-            className="glass group flex flex-col rounded-2xl p-6 opacity-0 shadow-lg"
+            className="glass group flex flex-col rounded-2xl p-4 opacity-0 shadow-lg sm:p-6"
           >
             <div className="mb-8">
               <div className="border-muted-foreground/50 group-hover:border-muted-foreground/90 flex items-center justify-center gap-2 border-b border-dashed pb-6 text-center transition-colors duration-300">
@@ -108,7 +109,7 @@ function TechstackTechnologies() {
                   {title}
                 </h3>
               </div>
-              <div className="relative mt-6 flex flex-wrap items-center gap-2">
+              <div className="relative mt-4 flex flex-wrap items-center gap-2 sm:mt-6">
                 {items.map((item) => {
                   const isProficient = proficientSet.has(item.toLowerCase());
 

@@ -18,8 +18,8 @@ function Logo() {
       <Image
         src={"/logo.png"}
         alt="Logo - MP"
-        height={40}
-        width={40}
+        height={32}
+        width={32}
         className="cursor-pointer rounded-2xl p-0.5"
         priority
       />

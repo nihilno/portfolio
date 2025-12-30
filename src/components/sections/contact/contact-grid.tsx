@@ -82,7 +82,7 @@ function ContactGrid() {
           loop
           playsInline
           poster="/poster.jpg"
-          preload="none"
+          preload="metadata"
           className="h-full w-full overflow-hidden object-cover transition-all duration-1000 ease-in-out group-hover:scale-200"
           aria-hidden="true"
         >

@@ -23,8 +23,8 @@ function AboutLeft() {
             ease: "power2.out",
             scrollTrigger: {
               trigger: item,
-              start: "top 100%",
-              end: "top 60%",
+              start: "top bottom",
+              end: "top center",
               scrub: true,
             },
           },
