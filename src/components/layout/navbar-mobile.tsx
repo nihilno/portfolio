@@ -21,6 +21,7 @@ function NavbarMobile() {
     <Sheet>
       <SheetTrigger asChild>
         <button
+          suppressHydrationWarning
           type="button"
           className="block"
           aria-label="Open navigation menu"
