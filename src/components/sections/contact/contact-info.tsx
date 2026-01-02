@@ -7,10 +7,9 @@ function ContactInfo() {
         Contact Information
       </h3>
       <div className="space-y-4">
-        {contactInfo.map(({ label, icon, value, href }) => (
-          <a
+        {contactInfo.map(({ label, icon, value }) => (
+          <div
             key={label}
-            href={href}
             className="hover:bg-surface group group outline-primary/15 border-primary/15 flex items-center gap-4 rounded-xl border border-dashed px-2 py-3 transition-colors duration-300 hover:outline sm:p-4"
           >
             <div className="bg-primary/10 group-hover:bg-primary/20 flex size-10 shrink-0 items-center justify-center rounded-xl transition-colors md:size-14">
@@ -20,7 +19,7 @@ function ContactInfo() {
               <div className="text-muted-foreground text-sm">{label}</div>
               <div className="text-sm font-medium sm:text-base">{value}</div>
             </div>
-          </a>
+          </div>
         ))}
       </div>
     </>

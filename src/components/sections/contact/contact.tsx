@@ -26,9 +26,9 @@ function Contact() {
             something great.
           </h2>
           <p className="text-muted-foreground">
-            I’m open to full-time positions or freelance work starting in 2026.
-            If you have an interesting project or team that values clean code,
-            performance, and thoughtful details, I’d love to hear from you.
+            I&apos;m open to full-time positions or freelance work. If you have
+            an interesting project or team that values clean code, performance,
+            and thoughtful details, I&apos;d love to hear from you.
           </p>
         </div>
 

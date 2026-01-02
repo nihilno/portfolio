@@ -28,7 +28,7 @@ function Experience() {
             ...
           </h2>
           <p className="text-muted-foreground">
-            The places where I’ve built, learned, and contributed
+            The places where I’ve built, learned, and contributed.
           </p>
         </div>
 

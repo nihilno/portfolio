@@ -54,8 +54,8 @@ function AboutLeft() {
           interfaces from scratch and watching them come alive. That spark
           turned into a habit: since 2018, I&apos;ve been self-teaching,
           building side projects, and progressing from static sites to Vite,
-          React, and eventually Next.js — all while studying IT at university
-          and working in a completely different field.
+          React, and eventually Next.js, all while studying IT at university and
+          working in a completely different field.
         </p>
         <p>
           In 2022 I took on my first freelance project for a travel agency. I
@@ -64,7 +64,7 @@ function AboutLeft() {
           2023 I shifted to full-time web work as a website administrator for a
           turbocharger company, handling upgrades, maintenance, and monitoring.
           After graduating and realizing I wanted to grow beyond that role, I
-          left in mid&dash;2025 to freelance and deepen my Next.js skills. Now,
+          left in mid&ndash;2025 to freelance and deepen my Next.js skills. Now,
           after half a year of independent work, I&apos;m ready to join a team
           in 2026 and build products alongside people who care about quality as
           much as I do.

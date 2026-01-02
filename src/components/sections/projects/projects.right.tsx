@@ -30,11 +30,11 @@ function ProjectsRight() {
           xPercent: 0,
           scale: 1,
           ease: "power3.out",
-          stagger: 0.15,
+          stagger: 0.05,
           scrollTrigger: {
             trigger: gridRef.current,
             start: "top 85%",
-            end: "bottom 35%",
+            end: "bottom center",
             scrub: true,
           },
         },
