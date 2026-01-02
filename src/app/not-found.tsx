@@ -47,7 +47,7 @@ export default function NotFound() {
         ease: "power2.in",
         stagger: 0.3,
       },
-      1,
+      0.5,
     );
 
     if (!buttonRef.current) return;
@@ -58,7 +58,7 @@ export default function NotFound() {
         autoAlpha: 0,
         ease: "power2.in",
       },
-      1.5,
+      1,
     );
   }, []);
 

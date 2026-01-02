@@ -13,15 +13,15 @@ function ProjectsLeft() {
         Featured work
       </span>
       <h2 className="mx-auto mt-8 mb-6 max-w-[14ch] text-4xl leading-tight font-normal md:text-5xl">
-        Projects that{" "}
+        Things{" "}
         <span className="text-secondary-foreground glow-text font-bold">
-          I am most proud of
+          I&apos;ve{" "}
         </span>
-        .
+        Built.
       </h2>
       <p className="text-muted-foreground mx-auto max-w-lg">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta optio,
-        animi soluta reiciendis porro ratione.
+        A few projects that show how I think and build &mdash; from polished
+        interfaces to full-stack applications.
       </p>
     </article>
   );

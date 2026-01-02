@@ -21,16 +21,14 @@ function Experience() {
             Career Journey
           </span>
           <h2 className="mt-4 mb-6 text-4xl md:text-5xl">
-            Experience that{" "}
+            Where{" "}
             <span className="text-secondary-foreground glow-text font-bold">
-              speaks volumes
+              I&apos;ve worked
             </span>
-            .
+            ...
           </h2>
           <p className="text-muted-foreground">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-            doloribus explicabo quis commodi? Iste omnis iusto molestias?
-            Aliquid, odio consectetur.
+            The places where I’ve built, learned, and contributed
           </p>
         </div>
 

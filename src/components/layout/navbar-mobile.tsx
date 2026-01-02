@@ -20,7 +20,7 @@ function NavbarMobile() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <button type="button" aria-label="Open Menu" className="block">
+        <button type="button" className="block">
           <Menu className="hover:text-primary size-6 cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-0.5 md:hidden" />
         </button>
       </SheetTrigger>

@@ -41,40 +41,40 @@ function AboutLeft() {
           About Me
         </span>
         <h2 className="text-secondary-foreground glow-text mt-8 text-4xl leading-tight font-bold md:text-5xl">
-          Building the future
-          <span className="text-foreground font-normal">
-            , one component at a time.
-          </span>
+          <span className="text-foreground font-normal">From first</span>
+          <span> lines of code</span>
+          <span className="text-foreground font-normal"> to now.</span>
         </h2>
       </div>
 
       <div className="text-muted-foreground space-y-5 opacity-0">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-          accusantium porro hic quos voluptatem dolor explicabo aliquam, quis
-          harum ea commodi fugiat placeat. Quae sit iusto alias, excepturi nisi
-          iste natus iure recusandae blanditiis, rem dolore nam sunt possimus
-          facere.
+          My journey into web development began in technical college with HTML,
+          CSS, and JavaScript. Something clicked right away — I loved shaping
+          interfaces from scratch and watching them come alive. That spark
+          turned into a habit: since 2018, I&apos;ve been self-teaching,
+          building side projects, and progressing from static sites to Vite,
+          React, and eventually Next.js — all while studying IT at university
+          and working in a completely different field.
         </p>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis,
-          tempora! Accusantium placeat, incidunt at ea, tempore neque laudantium
-          aperiam fuga dolorem quam perspiciatis cumque impedit dolorum velit
-          repellat perferendis temporibus.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-          necessitatibus. Exercitationem placeat nulla sed libero dolore sint
-          laudantium. Provident, vitae.
+          In 2022 I took on my first freelance project for a travel agency. I
+          wasn&apos;t fully confident yet, but I pushed through, delivered the
+          site, and the client loved it. That experience gave me momentum. In
+          2023 I shifted to full-time web work as a website administrator for a
+          turbocharger company, handling upgrades, maintenance, and monitoring.
+          After graduating and realizing I wanted to grow beyond that role, I
+          left in mid&dash;2025 to freelance and deepen my Next.js skills. Now,
+          after half a year of independent work, I&apos;m ready to join a team
+          in 2026 and build products alongside people who care about quality as
+          much as I do.
         </p>
       </div>
 
       <div className="glass glow-border mt-12 rounded-2xl p-6 opacity-0">
         <p className="text-foreground text-lg font-light italic">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa dolor
-          ea enim. Doloribus dolores fugiat et asperiores neque, voluptate enim
-          dignissimos, nam adipisci eligendi, laboriosam repellendus eveniet
-          unde quidem distinctio!
+          Every project teaches me something new — that&apos;s why I keep
+          building.
         </p>
       </div>
     </article>

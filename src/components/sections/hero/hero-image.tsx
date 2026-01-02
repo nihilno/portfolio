@@ -35,7 +35,7 @@ function HeroImage() {
         </div>
 
         <div className="glass absolute -top-4 -left-4 rounded-xl px-4 py-3">
-          <div className="text-primary text-2xl font-bold">5+</div>
+          <div className="text-primary text-2xl font-bold">2+</div>
           <div className="text-muted-foreground text-xs">Years Exp.</div>
         </div>
       </div>

@@ -6,9 +6,8 @@ function ContactStatus() {
         <span className="font-medium md:text-xl">Currently Available</span>
       </div>
       <p className="text-muted-foreground max-w-xl text-sm md:text-base">
-        I&apos;m currently open to new opportunities and exciting projects.
-        Whether you need a full-time engineer or a freelance consultant,
-        let&apos;s talk!
+        I&apos;m open to new opportunities in 2026 — full-time roles, freelance
+        projects, or just a conversation about ideas. Feel free to get in touch.
       </p>
     </>
   );

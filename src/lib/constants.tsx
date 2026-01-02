@@ -113,10 +113,10 @@ export const proficientSkills = [
   "Vercel",
   "GitHub Actions",
   "Docker",
-  "Lighthouse Optimization",
-  "FFmpeg",
-  "Fast Loading & Edge Delivery",
-  "SEO",
+  "Lighthouse Auditing",
+  "SEO & Discoverability",
+  "Caching",
+  "Media & Asset Optimization",
 ];
 
 export const precisedSkills = [
@@ -157,10 +157,12 @@ export const precisedSkills = [
     title: "Performance",
     icon: <Gauge className={precisedSkillsClasses} />,
     items: [
-      "Lighthouse Optimization",
-      "SEO",
-      "Fast Loading & Edge Delivery",
-      "FFmpeg",
+      "Lighthouse Auditing",
+      "SEO & Discoverability",
+      "Caching",
+      "Media & Asset Optimization",
+      "Core Web Vitals",
+      "Structured Data",
     ],
   },
 ];
@@ -173,25 +175,25 @@ export const highlights = [
     icon: <Code2 className={highlightIconStyle} />,
     title: "Clean Code",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, modi.",
+      "Readable, maintainable, and structured with intention — code that’s easy to build on.",
   },
   {
     icon: <Rocket className={highlightIconStyle} />,
     title: "Performance",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, modi.",
+      "Fast and efficient, driven by smart caching, optimized assets, and strong architecture.",
   },
   {
     icon: <Gem className={highlightIconStyle} />,
-    title: "Premium look",
+    title: "Polished UI",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, modi.",
+      "Cohesive interfaces with clear visuals, thoughtful motion, and refined details.",
   },
   {
     icon: <Lightbulb className={highlightIconStyle} />,
-    title: "Innovation",
+    title: "Curiosity",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, modi.",
+      "Always exploring new tools, patterns, and approaches to solve problems better.",
   },
 ];
 

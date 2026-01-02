@@ -1,3 +1,5 @@
+"use client";
+
 import { gsap } from "@/lib/gsap";
 import { useGSAP } from "@gsap/react";
 

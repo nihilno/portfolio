@@ -17,9 +17,9 @@ function WebsiteTechnologies() {
           Built with
         </h2>
         <p className="text-muted-foreground mx-auto max-w-lg">
-          This portfolio is powered by Next.js 16 and React 19, styled with
-          Tailwind CSS 4, typed with TypeScript, animated with GSAP, and
-          enhanced with FFmpeg for media processing.
+          I built this portfolio with Next.js 16 and React 19, styled it with
+          Tailwind CSS 4, typed it with TypeScript, animated it with GSAP, and
+          enhanced it with FFmpeg for media processing.
         </p>
       </article>
 

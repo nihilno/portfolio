@@ -12,7 +12,6 @@ function Techstack() {
       <div className={cn(sectionClasses, "px-6")}>
         <TechstackMarquee />
         <TechstackTechnologies />
-        {/* <TechstackLegend /> */}
       </div>
       <div className="relative z-10 container mx-auto -mt-[25vw] mb-48 px-6 sm:-mt-[8vw] xl:-mt-[12vw]">
         <TechstackLegend />
