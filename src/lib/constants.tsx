@@ -360,7 +360,7 @@ export const technologies = [
       "Catches any errors I could make early during development, helping keep the site stable and reliable.",
   },
   {
-    name: "GSAP",
+    name: "GSAP + Lenis",
     image: "/icons/gsap.svg",
     role: "Animations",
     description:

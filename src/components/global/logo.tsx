@@ -1,5 +1,6 @@
 "use client";
 
+import { lenis } from "@/lib/gsap";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,9 +11,7 @@ function Logo() {
         aria-label="Back to Top"
         type="button"
         onClick={() => {
-          window.scrollTo({
-            top: 0,
-          });
+          lenis?.scrollTo("top");
         }}
         className="hover:text-primary bg-foreground/70 hover:bg-primary glow-border rounded-full transition-all duration-300 ease-in-out hover:-translate-y-0.5"
       >

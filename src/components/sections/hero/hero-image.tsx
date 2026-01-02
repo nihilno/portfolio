@@ -18,7 +18,7 @@ function HeroImage() {
       <div className="from-primary/30 to-primary/10 absolute inset-0 animate-pulse rounded-3xl bg-linear-to-br via-transparent blur-2xl" />
       <div className="glass glow-border relative rounded-3xl p-2">
         <Image
-          src={"/profile-photo.jpg"}
+          src={"/me.jpg"}
           alt="Maciej Polowy"
           width={512}
           height={640}

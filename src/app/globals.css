@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "lenis/dist/lenis.css";
 
 :root {
   --background: #0f1418;
@@ -39,11 +40,6 @@
 
   *::-webkit-scrollbar {
     display: none;
-  }
-
-  html {
-    scroll-behavior: smooth;
-    scrollbar-gutter: stable both-edges;
   }
 
   img,
