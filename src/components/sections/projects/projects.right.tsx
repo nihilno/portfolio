@@ -60,7 +60,7 @@ function ProjectsRight() {
                 priority={index < 2}
                 className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
               />
-              <div className="from-card via-card/50 absolute inset-0 bg-linear-to-t to-transparent opacity-60" />
+              <div className="from-card via-card/50 absolute inset-0 bg-linear-to-t to-transparent opacity-25" />
 
               <div className="absolute inset-0 flex items-center justify-center gap-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <a
