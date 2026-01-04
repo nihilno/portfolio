@@ -3,10 +3,12 @@
 @import "lenis/dist/lenis.css";
 
 :root {
+  --radius: 0.5rem;
   --background: #0f1418;
   --foreground: #f0f2f5;
   --card: #141a1f;
   --primary: #20b2a6;
+  --toast-bg: #067e74;
   --primary-foreground: #fff;
   --secondary: #1f2830;
   --secondary-foreground: #20b2a6;

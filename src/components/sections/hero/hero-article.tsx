@@ -1,13 +1,13 @@
 "use client";
 
-import AccentButton from "@/components/global/accent-button";
 import Button from "@/components/global/button";
 import { socials } from "@/lib/constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { ChevronRight, Download } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { useRef } from "react";
+import DownloadBtnCv from "./download-cv-btn";
 
 function HeroArticle() {
   const articleRef = useRef<HTMLElement | null>(null);
@@ -65,10 +65,7 @@ function HeroArticle() {
           </Button>
         </Link>
 
-        <AccentButton>
-          <Download className="size-5 transition-all duration-200 ease-in-out group-hover:translate-y-1" />{" "}
-          <span>Download CV</span>
-        </AccentButton>
+        <DownloadBtnCv />
       </div>
       <div className="flex items-center justify-center gap-4 lg:justify-start">
         <span className="text-muted-foreground text-sm">Follow Me: </span>

@@ -1,9 +1,3 @@
-add places of work
-add download cv button
-create up to date cv
-
-check all project and their dbs
-test dark mode on each
-test all projects on brand new email
-check supabase endpoints/redirects
+add places of work based on cv
 test lighthouse
+add cv/pdfs

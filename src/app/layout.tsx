@@ -1,3 +1,4 @@
+import Providers from "@/components/global/providers";
 import { inter } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -33,13 +34,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preload" href="/cv/english.pdf" as="document" />
+        <link rel="preload" href="/cv/polish.pdf" as="document" />
+      </head>
       <body
         className={cn(
           inter.className,
           "bg-background text-foreground flex min-h-dvh cursor-default flex-col antialiased",
         )}
       >
-        <main className="flex-1">{children}</main>
+        <main className="flex-1">
+          <Providers>{children}</Providers>
+        </main>
       </body>
     </html>
   );
