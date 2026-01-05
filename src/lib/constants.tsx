@@ -307,39 +307,45 @@ export const projects = [
 
 export const experiences = [
   {
-    period: "2020 — 2022",
-    role: "praktyki",
-    company: "Turbo",
+    period: "2022 — 2025",
+    role: "Web Developer & IT Support",
+    company: "BBB Industries",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima quis accusantium velit impedit quo esse!",
-    technologies: ["x", "y", "z"],
-    current: true,
-  },
-  {
-    period: "2020 — 2022",
-    role: "biuro podrozy?",
-    company: "Turbo",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima quis accusantium velit impedit quo esse!",
-    technologies: ["x", "y", "z"],
+      "Built and maintained company websites, implementing updates, content changes, and technical enhancements to ensure reliability and modern functionality.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Prisma",
+      "Node.js",
+      "React Query",
+    ],
     current: false,
   },
   {
-    period: "2020 — 2022",
-    role: "inter turbno",
-    company: "Turbo",
+    period: "2021 — 2022",
+    role: "Web Developer",
+    company: "Rzemyk Travel",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima quis accusantium velit impedit quo esse!",
-    technologies: ["x", "y", "z"],
+      "Managed the full website lifecycle, including regular updates, performance monitoring, and troubleshooting to maintain security, speed, and uptime.",
+    technologies: [
+      "React",
+      "React Router",
+      "React Query",
+      "Tailwind CSS",
+      "PostgreSQL",
+    ],
     current: false,
   },
   {
-    period: "2020 — 2022",
-    role: "freelance",
-    company: "Turbo",
+    period: "2019",
+    role: "Frontend Developer Intern",
+    company: "Inforsound",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima quis accusantium velit impedit quo esse!",
-    technologies: ["x", "y", "z"],
+      "Contributed to UI updates using HTML, CSS, and JavaScript, building hands-on experience with modern frontend practices.",
+    technologies: ["HTML", "CSS", "JavaScript", "GitHub Actions"],
     current: false,
   },
 ];

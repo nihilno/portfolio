@@ -5,6 +5,7 @@ import { gsap } from "@/lib/gsap";
 import { cn } from "@/lib/utils";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
+import DownloadBtnCv from "../hero/download-cv-btn";
 
 function ExperienceTimeline() {
   const divRef = useRef<HTMLDivElement | null>(null);
@@ -103,6 +104,10 @@ function ExperienceTimeline() {
             </div>
           ),
         )}
+      </div>
+
+      <div className="mx-auto mt-24 max-w-60">
+        <DownloadBtnCv />
       </div>
     </div>
   );

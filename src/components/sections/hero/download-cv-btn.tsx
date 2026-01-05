@@ -21,11 +21,11 @@ function DownloadBtnCv() {
   function downloadFile(lang: "english" | "polish") {
     const el = document.createElement("a");
 
-    const file = lang === "english" ? "cv/english.png" : "cv/polish.png";
+    const file = lang === "english" ? "cv/english.pdf" : "cv/polish.pdf";
     const label =
       lang === "english"
         ? "English CV - Maciej Polowy.pdf"
-        : "Polish CV - Maciej Polowy.pdf";
+        : "Polskie CV - Maciej Polowy.pdf";
 
     el.href = file;
     el.download = label;
@@ -94,6 +94,7 @@ function DownloadBtnCv() {
               English
             </span>
           </button>
+
           <button
             type="button"
             onClick={() => downloadFile("polish")}
@@ -111,7 +112,13 @@ function DownloadBtnCv() {
             </span>
           </button>
         </div>
-        <DialogFooter className="mt-8">
+        <div className="mt-6">
+          <p className="text-foreground/75 max-w-[40ch] text-center text-xs">
+            I hereby give consent for my personal data to be processed for the
+            purpose of conducting recruitment.
+          </p>
+        </div>
+        <DialogFooter className="mt-4">
           <DialogClose asChild>
             <Button type="button">Cancel</Button>
           </DialogClose>
