@@ -78,6 +78,13 @@ function TechstackTechnologies() {
     );
 
     return () => tl.kill();
+    if (headingRef.current) {
+      gsap.set(headingRef.current, { clearProps: "all" });
+    }
+    if (gridRef.current) {
+      gsap.set(gridRef.current, { clearProps: "all" });
+      gsap.set(gridRef.current!.children, { clearProps: "all" });
+    }
   }, [isMobile]);
 
   return (
