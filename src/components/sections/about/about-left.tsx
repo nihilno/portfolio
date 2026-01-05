@@ -58,10 +58,10 @@ function AboutLeft() {
           working in a completely different field.
         </p>
         <p>
-          In 2022 I took on my first freelance project for a travel agency. I
+          In 2021 I took on my first freelance project for a travel agency. I
           wasn&apos;t fully confident yet, but I pushed through, delivered the
           site, and the client loved it. That experience gave me momentum. In
-          2023 I shifted to full-time web work as a website administrator for a
+          late 2022 I shifted to full-time web work as a Web Developer for a
           turbocharger company, handling upgrades, maintenance, and monitoring.
           After graduating and realizing I wanted to grow beyond that role, I
           left in mid&ndash;2025 to freelance and deepen my Next.js skills. Now,

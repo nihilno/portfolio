@@ -34,10 +34,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="preload" href="/cv/english.pdf" as="document" />
-        <link rel="preload" href="/cv/polish.pdf" as="document" />
-      </head>
       <body
         className={cn(
           inter.className,
