@@ -21,9 +21,12 @@ function TechstackTechnologies() {
   const gridRef = useRef<HTMLDivElement | null>(null);
 
   const isMobile = useMediaQuery({ maxWidth: 639 });
+  const prefersReducedMotion = useMediaQuery({
+    query: "(prefers-reduced-motion: reduce)",
+  });
 
   useGSAP(() => {
-    if (isMobile) return;
+    if (isMobile || prefersReducedMotion) return;
     if (!divRef.current || !headingRef.current || !gridRef.current) return;
 
     const tl = gsap.timeline({
@@ -77,15 +80,17 @@ function TechstackTechnologies() {
       0.5,
     );
 
-    return () => tl.kill();
-    if (headingRef.current) {
-      gsap.set(headingRef.current, { clearProps: "all" });
-    }
-    if (gridRef.current) {
-      gsap.set(gridRef.current, { clearProps: "all" });
-      gsap.set(gridRef.current!.children, { clearProps: "all" });
-    }
-  }, [isMobile]);
+    return () => {
+      tl.kill();
+      if (headingRef.current) {
+        gsap.set(headingRef.current, { clearProps: "all" });
+      }
+      if (gridRef.current) {
+        gsap.set(gridRef.current, { clearProps: "all" });
+        gsap.set(gridRef.current!.children, { clearProps: "all" });
+      }
+    };
+  }, [isMobile, prefersReducedMotion]);
 
   return (
     <div
@@ -119,7 +124,10 @@ function TechstackTechnologies() {
         {precisedSkills.map(({ title, icon, items }) => (
           <div
             key={title}
-            className="glass group flex flex-col rounded-2xl p-4 shadow-lg sm:p-6 sm:opacity-0"
+            className={cn(
+              "glass group flex flex-col rounded-2xl p-4 shadow-lg sm:p-6",
+              !isMobile && "sm:opacity-0",
+            )}
           >
             <div className="mb-8">
               <div className="border-muted-foreground/50 group-hover:border-muted-foreground/90 flex items-center justify-center gap-2 border-b border-dashed pb-6 text-center transition-colors duration-300">
