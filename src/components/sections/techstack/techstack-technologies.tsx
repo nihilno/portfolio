@@ -116,9 +116,7 @@ function TechstackTechnologies() {
       <div
         ref={gridRef}
         className={
-          isMobile
-            ? "absolute top-1/2 left-1/2 z-10 grid -translate-x-1/2 -translate-y-1/2 grid-cols-1"
-            : "mt-16 grid w-full gap-6 sm:grid-cols-2 sm:opacity-0 lg:grid-cols-3"
+          "mt-16 grid w-full gap-6 sm:absolute sm:top-1/2 sm:left-1/2 sm:z-10 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:grid-cols-2 sm:opacity-0 lg:grid-cols-3"
         }
       >
         {precisedSkills.map(({ title, icon, items }) => (
