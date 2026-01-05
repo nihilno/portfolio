@@ -8,97 +8,103 @@ import { cn } from "@/lib/utils";
 import { useGSAP } from "@gsap/react";
 import { ChevronDown } from "lucide-react";
 import { useRef } from "react";
+import { useMediaQuery } from "react-responsive";
 
 function TechstackTechnologies() {
   const proficientSet = new Set(proficientSkills.map((s) => s.toLowerCase()));
   const divRef = useRef<HTMLDivElement | null>(null);
   const headingRef = useRef<HTMLDivElement | null>(null);
   const gridRef = useRef<HTMLDivElement | null>(null);
+  const isMobile = useMediaQuery({ maxWidth: 639 });
 
   useGSAP(() => {
     if (!divRef.current || !headingRef.current || !gridRef.current) return;
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: divRef.current,
-        start: "top top",
-        end: "+=175%",
-        scrub: 1,
-        pin: true,
-        pinType: "transform",
-        anticipatePin: 1,
-      },
-    });
-
-    tl.to(
-      headingRef.current,
-      {
-        autoAlpha: 0.25,
-        scale: 0.75,
-        ease: "power2.inOut",
-        duration: 1,
-      },
-      0,
-    );
-
-    tl.to(
-      gridRef.current,
-      {
-        autoAlpha: 1,
-        ease: "power2.out",
-        duration: 0.8,
-      },
-      0.3,
-    );
-
-    const cards = gsap.utils.toArray(gridRef.current.children);
-
-    tl.fromTo(
-      cards,
-      { autoAlpha: 0, y: 80 },
-      {
-        autoAlpha: 1,
-        y: 0,
-        ease: "power2.out",
-        stagger: {
-          amount: 0.5,
-          from: "edges",
+    if (!isMobile) {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: divRef.current,
+          start: "top top",
+          end: "+=175%",
+          scrub: 1,
+          pin: true,
+          pinType: "transform",
+          anticipatePin: 1,
         },
-        duration: 1,
-      },
-      0.5,
-    );
+      });
+
+      tl.to(
+        headingRef.current,
+        {
+          autoAlpha: 0.25,
+          scale: 0.75,
+          ease: "power2.inOut",
+          duration: 1,
+        },
+        0,
+      );
+
+      tl.to(
+        gridRef.current,
+        {
+          autoAlpha: 1,
+          ease: "power2.out",
+          duration: 0.8,
+        },
+        0.3,
+      );
+
+      const cards = gsap.utils.toArray(gridRef.current.children);
+
+      tl.fromTo(
+        cards,
+        { autoAlpha: 0, y: 80 },
+        {
+          autoAlpha: 1,
+          y: 0,
+          ease: "power2.out",
+          stagger: {
+            amount: 0.5,
+            from: "edges",
+          },
+          duration: 1,
+        },
+        0.5,
+      );
+    }
   }, []);
 
   return (
     <div
-      className="flex min-h-[180dvh] flex-col items-center justify-center sm:min-h-dvh"
+      className="flex min-h-dvh flex-col items-center justify-center"
       ref={divRef}
     >
-      <div ref={headingRef}>
+      <div ref={headingRef} className="my-16 sm:absolute">
         <h1
           className={cn(
             "text-secondary-foreground glow-text text-center text-5xl font-bold uppercase sm:text-8xl xl:text-[192px] xl:leading-42",
             oswald.className,
-            "-translate-y-80 sm:translate-0",
           )}
         >
           Technologies <br /> I work with
         </h1>
 
-        <div className="text-foreground/75 flex translate-y-32 flex-col items-center gap-2">
+        <div className="text-foreground/75 hidden translate-y-32 flex-col items-center gap-2 sm:flex">
           <span className="text-xs tracking-wider uppercase">Scroll</span>
           <ChevronDown className="size-6 animate-bounce" />
         </div>
       </div>
       <div
-        className="absolute top-1/2 left-1/2 z-10 mt-16 grid w-full -translate-x-1/2 -translate-y-1/2 grid-cols-1 gap-6 opacity-0 sm:grid-cols-2 lg:grid-cols-3"
+        className={
+          !isMobile
+            ? "mt-16 grid w-full gap-6 sm:grid-cols-2 sm:opacity-0 lg:grid-cols-3"
+            : "absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2 grid-cols-1"
+        }
         ref={gridRef}
       >
         {precisedSkills.map(({ title, icon, items }) => (
           <div
             key={title}
-            className="glass group flex flex-col rounded-2xl p-4 opacity-0 shadow-lg sm:p-6"
+            className="glass group flex flex-col rounded-2xl p-4 shadow-lg sm:p-6 sm:opacity-0"
           >
             <div className="mb-8">
               <div className="border-muted-foreground/50 group-hover:border-muted-foreground/90 flex items-center justify-center gap-2 border-b border-dashed pb-6 text-center transition-colors duration-300">

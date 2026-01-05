@@ -115,7 +115,6 @@ export const proficientSkills = [
   "Vercel",
   "GitHub Actions",
   "Docker",
-  "Lighthouse Auditing",
   "SEO & Discoverability",
   "Caching",
   "Media & Asset Optimization",
@@ -168,7 +167,6 @@ export const precisedSkills = [
     title: "Performance",
     icon: <Gauge className={precisedSkillsClasses} />,
     items: [
-      "Lighthouse Auditing",
       "SEO & Discoverability",
       "Caching",
       "Media & Asset Optimization",

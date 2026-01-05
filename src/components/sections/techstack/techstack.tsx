@@ -13,7 +13,7 @@ function Techstack() {
         <TechstackMarquee />
         <TechstackTechnologies />
       </div>
-      <div className="relative z-10 container mx-auto -mt-[15vw] mb-48 px-6 sm:-mt-[8vw] xl:-mt-[12vw]">
+      <div className="relative z-10 container mx-auto -mt-10 hidden px-6 sm:block">
         <TechstackLegend />
       </div>
     </section>

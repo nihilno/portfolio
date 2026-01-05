@@ -1,6 +1,6 @@
 function TechstackLegend() {
   return (
-    <div className="mt-8 flex flex-col">
+    <div className="flex flex-col">
       <h4 className="text-foreground/50 text-sm font-semibold">Legend</h4>
       <div className="mt-2 flex items-center gap-2">
         <div className="bg-primary/75 size-3 animate-pulse rounded-full" />
