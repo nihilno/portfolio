@@ -5,9 +5,16 @@ import { gsap } from "@/lib/gsap";
 import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function WebsiteTechnologiesSlider() {
+  useEffect(() => {
+    technologies.forEach((tech) => {
+      const img = new window.Image();
+      img.src = tech.image;
+    });
+  }, []);
+
   const [active, setActive] = useState(0);
   const titleRef = useRef<HTMLHeadingElement | null>(null);
   const imageRef = useRef<HTMLDivElement | null>(null);
