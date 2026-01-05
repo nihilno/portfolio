@@ -89,6 +89,8 @@ export const skills = [
   "Structured Data",
   "Media Optimization",
   "Edge Delivery",
+  "GitHub Copilot",
+  "CodeRabbit",
 ];
 
 const precisedSkillsClasses = "size-5 md:size-6";
@@ -117,6 +119,8 @@ export const proficientSkills = [
   "SEO & Discoverability",
   "Caching",
   "Media & Asset Optimization",
+  "GitHub Copilot",
+  "CodeRabbit",
 ];
 
 export const precisedSkills = [
@@ -151,7 +155,14 @@ export const precisedSkills = [
   {
     title: "Deployment & Tooling",
     icon: <Rocket className={precisedSkillsClasses} />,
-    items: ["Vercel", "GitHub Actions", "Docker", "Inngest"],
+    items: [
+      "Vercel",
+      "GitHub Actions",
+      "Docker",
+      "GitHub Copilot",
+      "CodeRabbit",
+      "Inngest",
+    ],
   },
   {
     title: "Performance",
