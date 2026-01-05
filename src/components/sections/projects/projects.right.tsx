@@ -34,7 +34,7 @@ function ProjectsRight() {
           scrollTrigger: {
             trigger: gridRef.current,
             start: "top 85%",
-            end: "bottom center",
+            end: "center center",
             scrub: true,
           },
         },

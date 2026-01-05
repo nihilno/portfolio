@@ -31,7 +31,7 @@ function ExperienceTimeline() {
             scrollTrigger: {
               trigger: item,
               scrub: true,
-              end: "top 35%",
+              end: "top center",
             },
           },
         ),
