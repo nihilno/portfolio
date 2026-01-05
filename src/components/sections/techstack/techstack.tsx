@@ -12,9 +12,9 @@ function Techstack() {
       <div className={cn(sectionClasses, "px-6")}>
         <TechstackMarquee />
         <TechstackTechnologies />
-      </div>
-      <div className="relative z-10 container mx-auto -mt-10 hidden px-6 sm:block">
-        <TechstackLegend />
+        <div className="relative z-10 container mx-auto -mt-[2vw] hidden px-6 sm:block">
+          <TechstackLegend />
+        </div>
       </div>
     </section>
   );
