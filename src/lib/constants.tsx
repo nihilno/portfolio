@@ -161,6 +161,8 @@ export const precisedSkills = [
       "GitHub Copilot",
       "CodeRabbit",
       "Inngest",
+      "React Test Library",
+      "Jest",
     ],
   },
   {
