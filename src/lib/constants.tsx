@@ -112,6 +112,7 @@ export const proficientSkills = [
   "Supabase",
   "Clerk",
   "Supabase Auth",
+  "NextAuth.js",
   "Vercel",
   "GitHub Actions",
   "Docker",
