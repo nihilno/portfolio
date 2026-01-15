@@ -21,14 +21,13 @@ function DownloadBtnCv() {
   function downloadFile(lang: "english" | "polish") {
     const el = document.createElement("a");
 
-    const file = lang === "english" ? "cv/english.pdf" : "cv/polish.pdf";
-    const label =
+    const file =
       lang === "english"
-        ? "English CV - Maciej Polowy.pdf"
-        : "Polskie CV - Maciej Polowy.pdf";
+        ? "cv/English CV - Maciej Polowy.pdf"
+        : "cv/Polskie CV - Maciej Polowy.pdf";
 
     el.href = file;
-    el.download = label;
+    el.download = file;
 
     document.body.appendChild(el);
     el.click();
