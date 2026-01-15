@@ -88,6 +88,7 @@ function DownloadBtnCv() {
               alt="English"
               width={110}
               height={110}
+              priority
               className="group-hover:bg-primary/20 cursor-pointer rounded-full p-2 transition-all duration-300 ease-in-out"
             />
             <span className="text-foreground/75 group-hover:text-foreground text-sm transition-colors">
@@ -105,6 +106,7 @@ function DownloadBtnCv() {
               alt="Polish"
               width={110}
               height={110}
+              priority
               className="group-hover:bg-primary/20 cursor-pointer rounded-full p-2 transition-all duration-300 ease-in-out"
             />
             <span className="text-foreground/75 group-hover:text-foreground text-sm transition-colors">
