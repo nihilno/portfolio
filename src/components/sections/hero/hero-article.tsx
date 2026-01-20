@@ -41,15 +41,15 @@ function HeroArticle() {
     <article className="space-y-8 opacity-0" ref={articleRef}>
       <div className="text-center lg:text-left">
         <span className="glass text-primary inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs sm:text-sm">
-          <span className="bg-primary size-2 animate-pulse rounded-full" />
+          <h1 className="bg-primary size-2 animate-pulse rounded-full" />
           Full-Stack Engineer &bull; React/Next.js & TypeScript
         </span>
       </div>
       <div className="flex flex-col items-center space-y-4 text-center lg:items-start lg:text-left">
-        <h1 className="max-w-[14ch] text-4xl leading-tight font-bold md:text-5xl xl:text-6xl">
+        <h2 className="max-w-[14ch] text-4xl leading-tight font-bold md:text-5xl xl:text-6xl">
           Building modern web products
           <span className="text-primary glow-text"> from backend to UI</span>.
-        </h1>
+        </h2>
         <p className="text-muted-foreground max-w-lg md:text-lg">
           I build web products end-to-end &mdash; scalable backend architecture
           to polished, responsive interfaces. I focus on clean code, fast

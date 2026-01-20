@@ -7,6 +7,20 @@ export default function Head() {
       <link rel="preload" href="/icons/react.svg" as="image" />
       <link rel="preload" href="/icons/tailwind.svg" as="image" />
       <link rel="preload" href="/icons/ts.svg" as="image" />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "Maciej Polowy",
+            url: "https://maciejpolowy.space",
+            jobTitle: "Full-Stack Developer",
+            sameAs: ["https://github.com/nihilno"],
+          }),
+        }}
+      />
     </>
   );
 }
