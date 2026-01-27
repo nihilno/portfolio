@@ -91,6 +91,8 @@ export const skills = [
   "Edge Delivery",
   "GitHub Copilot",
   "CodeRabbit",
+  "Github Copilot",
+  "Express.js",
 ];
 
 const precisedSkillsClasses = "size-5 md:size-6";
@@ -145,7 +147,15 @@ export const precisedSkills = [
   {
     title: "Backend & Data",
     icon: <Server className={precisedSkillsClasses} />,
-    items: ["Node.js", "Prisma", "PostgreSQL", "Supabase", "MongoDB", "Redis"],
+    items: [
+      "Node.js",
+      "Express.js",
+      "Prisma",
+      "PostgreSQL",
+      "Supabase",
+      "MongoDB",
+      "Redis",
+    ],
   },
   {
     title: "Auth & Payments",
