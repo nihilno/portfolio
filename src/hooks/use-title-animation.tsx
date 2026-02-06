@@ -1,6 +1,6 @@
 "use client";
 
-import { gsap } from "@/lib/gsap";
+import { gsap } from "@/lib/lenis";
 import { useGSAP } from "@gsap/react";
 
 export function useTitleCenter(ref: React.RefObject<HTMLElement | null>) {

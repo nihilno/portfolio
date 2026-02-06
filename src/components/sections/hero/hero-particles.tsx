@@ -1,6 +1,6 @@
 "use client";
 
-import { useParticles } from "@/hooks/useParticles";
+import { useParticles } from "@/hooks/use-particles";
 import Image from "next/image";
 
 function HeroParticles() {

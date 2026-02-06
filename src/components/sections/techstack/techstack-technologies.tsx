@@ -3,7 +3,7 @@
 import { Badge } from "@/components/ui/badge";
 import { precisedSkills, proficientSkills } from "@/lib/constants";
 import { oswald } from "@/lib/fonts";
-import { gsap } from "@/lib/gsap";
+import { gsap } from "@/lib/lenis";
 import { cn } from "@/lib/utils";
 import { useGSAP } from "@gsap/react";
 import { ChevronDown } from "lucide-react";

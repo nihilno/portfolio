@@ -1,6 +1,6 @@
 "use client";
 
-import { lenis } from "@/lib/gsap";
+import { lenis } from "@/lib/lenis";
 import Image from "next/image";
 import Link from "next/link";
 

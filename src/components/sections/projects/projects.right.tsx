@@ -2,9 +2,9 @@
 
 import AccentButton from "@/components/global/accent-button";
 import { projects } from "@/lib/constants";
-import { gsap } from "@/lib/gsap";
+import { gsap } from "@/lib/lenis";
 import { useGSAP } from "@gsap/react";
-import { ArrowUpRight, Github } from "lucide-react";
+import { ArrowUpRight, Github, Server } from "lucide-react";
 import Image from "next/image";
 import { useRef } from "react";
 
@@ -34,7 +34,7 @@ function ProjectsRight() {
           scrollTrigger: {
             trigger: gridRef.current,
             start: "top 85%",
-            end: "center center",
+            end: "center bottom",
             scrub: true,
           },
         },
@@ -46,7 +46,19 @@ function ProjectsRight() {
   return (
     <div className="grid h-full grid-cols-1 gap-8 lg:grid-cols-2" ref={gridRef}>
       {projects.map(
-        ({ title, image, description, tags, link, github }, index) => (
+        (
+          {
+            title,
+            image,
+            description,
+            tags,
+            link,
+            github,
+            github_client,
+            github_server,
+          },
+          index,
+        ) => (
           <div
             key={`${image}-${index}`}
             className="group glass overflow-hidden rounded-2xl opacity-0"
@@ -71,14 +83,36 @@ function ProjectsRight() {
                 >
                   <ArrowUpRight className="size-8 cursor-pointer" />
                 </a>
-                <a
-                  href={github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="glass hover:bg-primary hover:text-primary-foreground rounded-full p-3 transition-colors duration-300"
-                >
-                  <Github className="size-8 cursor-pointer" />
-                </a>
+
+                {github_client && github_server ? (
+                  <div className="flex items-center gap-6">
+                    <a
+                      href={github_client}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="glass hover:bg-primary hover:text-primary-foreground rounded-full p-3 transition-colors duration-300"
+                    >
+                      <Github className="size-8 cursor-pointer" />
+                    </a>
+                    <a
+                      href={github_server}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="glass hover:bg-primary hover:text-primary-foreground rounded-full p-3 transition-colors duration-300"
+                    >
+                      <Server className="size-8 cursor-pointer" />
+                    </a>
+                  </div>
+                ) : (
+                  <a
+                    href={github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="glass hover:bg-primary hover:text-primary-foreground rounded-full p-3 transition-colors duration-300"
+                  >
+                    <Github className="size-8 cursor-pointer" />
+                  </a>
+                )}
               </div>
             </div>
 

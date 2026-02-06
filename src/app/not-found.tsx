@@ -1,8 +1,8 @@
 "use client";
 
-import { useParticles } from "@/hooks/useParticles";
+import { useParticles } from "@/hooks/use-particles";
 import { oswald } from "@/lib/fonts";
-import { gsap } from "@/lib/gsap";
+import { gsap } from "@/lib/lenis";
 import { cn } from "@/lib/utils";
 import { useGSAP } from "@gsap/react";
 import { useRouter } from "next/navigation";

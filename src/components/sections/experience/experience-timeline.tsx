@@ -1,7 +1,7 @@
 "use client";
 
 import { experiences } from "@/lib/constants";
-import { gsap } from "@/lib/gsap";
+import { gsap } from "@/lib/lenis";
 import { cn } from "@/lib/utils";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";

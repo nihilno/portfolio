@@ -1,7 +1,7 @@
 "use client";
 
 import { technologies } from "@/lib/constants";
-import { gsap } from "@/lib/gsap";
+import { gsap } from "@/lib/lenis";
 import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";

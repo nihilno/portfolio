@@ -3,7 +3,7 @@
 import Button from "@/components/global/button";
 import Logo from "@/components/global/logo";
 import { navLinks } from "@/lib/constants";
-import { gsap } from "@/lib/gsap";
+import { gsap } from "@/lib/lenis";
 import { useGSAP } from "@gsap/react";
 import Link from "next/link";
 import NavbarMobile from "./navbar-mobile";

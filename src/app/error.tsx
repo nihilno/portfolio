@@ -1,6 +1,6 @@
 "use client";
 
-import { useParticles } from "@/hooks/useParticles";
+import { useParticles } from "@/hooks/use-particles";
 import { AlertCircleIcon, Home, RotateCw } from "lucide-react";
 import Link from "next/link";
 
