@@ -376,7 +376,7 @@ export const projects = [
 export const experiences = [
   {
     period: "2022 — 2025",
-    role: "Web Developer & IT Support",
+    role: "Web Developer",
     company: "BBB Industries",
     description:
       "Built and maintained company websites, implementing updates, content changes, and technical enhancements to ensure reliability and modern functionality.",
