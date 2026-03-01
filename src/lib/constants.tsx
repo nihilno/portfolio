@@ -56,45 +56,6 @@ export const socials = [
   },
 ];
 
-export const skills = [
-  "React",
-  "Next.js",
-  "TypeScript",
-  "Tailwind CSS",
-  "shadcn/ui",
-  "GSAP",
-  "Three.js",
-  "React Query",
-  "Zustand",
-  "React Hook Form",
-  "Zod",
-  "Node.js",
-  "Prisma",
-  "PostgreSQL",
-  "Supabase",
-  "MongoDB",
-  "Redis",
-  "Clerk",
-  "Supabase Auth",
-  "NextAuth.js",
-  "Stripe",
-  "Vercel",
-  "GitHub Actions",
-  "Docker",
-  "Inngest",
-  "FFmpeg",
-  "Web Vitals",
-  "Lighthouse Optimization",
-  "SEO",
-  "Structured Data",
-  "Media Optimization",
-  "Edge Delivery",
-  "GitHub Copilot",
-  "CodeRabbit",
-  "Github Copilot",
-  "Express.js",
-];
-
 const precisedSkillsClasses = "size-5 md:size-6";
 
 export const proficientSkills = [
@@ -102,6 +63,7 @@ export const proficientSkills = [
   "Next.js",
   "TypeScript",
   "Tailwind CSS",
+  "Convex",
   "GSAP",
   "shadcn/ui",
   "React Query",
@@ -114,8 +76,6 @@ export const proficientSkills = [
   "PostgreSQL",
   "Supabase",
   "Clerk",
-  "Supabase Auth",
-  "NextAuth.js",
   "Vercel",
   "GitHub Actions",
   "Docker",
@@ -137,7 +97,6 @@ export const precisedSkills = [
       "Tailwind CSS",
       "shadcn/ui",
       "GSAP",
-      "Three.js",
     ],
   },
   {
@@ -151,42 +110,27 @@ export const precisedSkills = [
     items: [
       "Node.js",
       "Express.js",
+      "Convex",
       "Prisma",
       "PostgreSQL",
       "Supabase",
       "MongoDB",
-      "Redis",
     ],
   },
   {
     title: "Auth & Payments",
     icon: <ShieldCheck className={precisedSkillsClasses} />,
-    items: ["Clerk", "Supabase Auth", "NextAuth.js", "Stripe"],
+    items: ["Clerk", "Stripe"],
   },
   {
     title: "Deployment & Tooling",
     icon: <Rocket className={precisedSkillsClasses} />,
-    items: [
-      "Vercel",
-      "GitHub Actions",
-      "Docker",
-      "GitHub Copilot",
-      "CodeRabbit",
-      "Inngest",
-      "React Test Library",
-      "Jest",
-    ],
+    items: ["Vercel", "Docker", "GitHub Copilot", "CodeRabbit"],
   },
   {
     title: "Performance",
     icon: <Gauge className={precisedSkillsClasses} />,
-    items: [
-      "SEO & Discoverability",
-      "Caching",
-      "Media & Asset Optimization",
-      "Core Web Vitals",
-      "Structured Data",
-    ],
+    items: ["SEO & Discoverability", "Caching", "Media & Asset Optimization"],
   },
 ];
 
@@ -242,28 +186,6 @@ export const projects = [
     link: "https://mp-next-ecommerce.vercel.app/",
     github: "https://github.com/nihilno/mp-next-ecommerce",
   },
-  // {
-  //   title: "Luma Ecommerce Platform",
-  //   description:
-  //     "Full‑stack ecommerce platform with a custom design system, robust authentication, and strong SEO foundations (metadata, sitemaps, structured data).",
-  //   image: "/projects/luma.png",
-  //   tags: [
-  //     "Next.js",
-  //     "TypeScript",
-  //     "Tailwind CSS",
-  //     "shadcn/ui",
-  //     "AuthJS",
-  //     "React Hook Form + Zod",
-  //     "Prisma",
-  //     "PostgreSQL",
-  //     "Stripe",
-  //     "Uploadthing",
-  //     "Resend",
-  //   ],
-  //   link: "https://luma-supreme.vercel.app/",
-  //   github: "https://github.com/nihilno/luma-supreme",
-  // },
-
   {
     title: "Lexa Invoice Management",
     description:
@@ -287,25 +209,6 @@ export const projects = [
     github_client: "https://github.com/nihilno/lexa-client",
     github_server: "https://github.com/nihilno/lexa-server",
   },
-  // {
-  //   title: "Nexletter AI Newsletter System",
-  //   description:
-  //     "AI‑powered newsletter system that fetches curated news, summarizes it with a lightweight model, and delivers personalized updates on an automated schedule.",
-  //   image: "/projects/nexletter.png",
-  //   tags: [
-  //     "Next.js",
-  //     "TypeScript",
-  //     "Tailwind CSS",
-  //     "shadcn/ui",
-  //     "React Hook Form + Zod",
-  //     "Supabase",
-  //     "Supabase Auth",
-  //     "Inngest",
-  //     "EmailJS",
-  //   ],
-  //   link: "https://nexletter.vercel.app/",
-  //   github: "https://github.com/nihilno/nexletter",
-  // },
   {
     title: "Cat-alog Price Tracker",
     description:
@@ -375,7 +278,7 @@ export const projects = [
 
 export const experiences = [
   {
-    period: "2022 — 2025",
+    period: "2023 — 2025",
     role: "Web Developer",
     company: "BBB Industries",
     description:
@@ -394,7 +297,7 @@ export const experiences = [
     current: false,
   },
   {
-    period: "2021 — 2022",
+    period: "2023",
     role: "Web Developer",
     company: "Rzemyk Travel",
     description:

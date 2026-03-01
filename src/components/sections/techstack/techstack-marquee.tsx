@@ -1,4 +1,4 @@
-import { skills } from "@/lib/constants";
+import { proficientSkills } from "@/lib/constants";
 
 function TechstackMarquee() {
   return (
@@ -8,7 +8,7 @@ function TechstackMarquee() {
         <div className="from-background pointer-events-none absolute inset-y-0 right-0 z-10 w-32 bg-linear-to-l to-transparent" />
 
         <div className="animated-marquee flex">
-          {[...skills, ...skills].map((skill, index) => (
+          {[...proficientSkills, ...proficientSkills].map((skill, index) => (
             <div
               key={`${skill}-${index}`}
               className="shrink-0 px-4 py-4 sm:px-8"

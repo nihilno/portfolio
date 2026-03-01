@@ -7,6 +7,7 @@ import gsap from "gsap";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { useRef } from "react";
+import DownloadBtnCv from "./download-cv-btn";
 
 function HeroArticle() {
   const articleRef = useRef<HTMLElement | null>(null);
@@ -65,7 +66,7 @@ function HeroArticle() {
           </Button>
         </Link>
 
-        {/* <DownloadBtnCv /> */}
+        <DownloadBtnCv />
       </div>
       <div className="flex items-center justify-center gap-4 lg:justify-start">
         <span className="text-muted-foreground text-sm">Follow Me: </span>
